@@ -110,8 +110,8 @@
                                                         <constraint firstAttribute="height" constant="102" id="g9o-Z9-mvg"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="4 porções • 15 min • Trabalhoso" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7tR-DJ-Hf0">
-                                                    <rect key="frame" x="8" y="145" width="168" height="13.5"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4 porções • 15 min • Trabalhoso" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7tR-DJ-Hf0">
+                                                    <rect key="frame" x="8" y="136" width="141" height="11"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="9"/>
                                                     <color key="textColor" systemColor="systemGray3Color"/>
                                                     <nil key="highlightedColor"/>
@@ -127,11 +127,13 @@
                                             <constraints>
                                                 <constraint firstItem="7tR-DJ-Hf0" firstAttribute="top" secondItem="k67-VR-Q2G" secondAttribute="bottom" constant="10" id="0uQ-1J-i8V"/>
                                                 <constraint firstAttribute="trailing" secondItem="xkj-7f-H6W" secondAttribute="trailing" id="5Db-Iv-kW5"/>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="k67-VR-Q2G" secondAttribute="trailing" constant="20" symbolic="YES" id="8Kt-XN-1P9"/>
                                                 <constraint firstItem="k67-VR-Q2G" firstAttribute="leading" secondItem="ez0-G8-b9O" secondAttribute="leading" constant="8" id="ELC-sF-jgv"/>
                                                 <constraint firstItem="k67-VR-Q2G" firstAttribute="top" secondItem="xkj-7f-H6W" secondAttribute="bottom" constant="8" id="Hty-x0-cN2"/>
                                                 <constraint firstItem="xkj-7f-H6W" firstAttribute="leading" secondItem="ez0-G8-b9O" secondAttribute="leading" id="HwU-cL-wGO"/>
                                                 <constraint firstItem="xkj-7f-H6W" firstAttribute="top" secondItem="ez0-G8-b9O" secondAttribute="top" id="fdq-Cx-Yxc"/>
                                                 <constraint firstItem="7tR-DJ-Hf0" firstAttribute="leading" secondItem="ez0-G8-b9O" secondAttribute="leading" constant="8" id="hJC-LM-mw1"/>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="7tR-DJ-Hf0" secondAttribute="trailing" constant="11" id="z1S-C7-K3S"/>
                                             </constraints>
                                             <userDefinedRuntimeAttributes>
                                                 <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -167,6 +169,7 @@
                             <constraint firstItem="yCA-b7-yej" firstAttribute="trailing" secondItem="Ast-O5-gKV" secondAttribute="trailing" constant="16" id="hLM-DI-AxP"/>
                             <constraint firstItem="UdA-tD-10l" firstAttribute="leading" secondItem="yCA-b7-yej" secondAttribute="leading" constant="16" id="i60-U9-vbX"/>
                             <constraint firstItem="dnu-1z-kWj" firstAttribute="top" secondItem="yCA-b7-yej" secondAttribute="top" constant="44" id="qL7-Fe-nFv"/>
+                            <constraint firstItem="yCA-b7-yej" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="dnu-1z-kWj" secondAttribute="trailing" symbolic="YES" id="zMT-rg-DpY"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Receitas" id="cee-Dx-4WZ"/>
@@ -178,40 +181,39 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="w6T-fN-GyC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2217" y="-353"/>
-            <point key="canvasLocation" x="2789.2307692307691" y="-244.54976303317534"/>
         </scene>
         <!--Lista de Compras-->
         <scene sceneID="KK3-8R-tJQ">
             <objects>
                 <viewController id="YZ3-Gx-iVi" customClass="ShoppingListViewController" customModule="iCook" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="CCR-jt-sgg">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="psI-Ip-ghb">
-                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <rect key="frame" x="0.0" y="88" width="390" height="673"/>
                                 <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="itemCell" rowHeight="43.5" id="vyR-Bs-bh9" customClass="ShoppingListItemCell" customModule="iCook" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="24.5" width="414" height="43.5"/>
+                                        <rect key="frame" x="0.0" y="24.333333969116211" width="390" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="vyR-Bs-bh9" id="UZ1-x7-1ZW">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="390" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uDi-Qq-f9q" customClass="RadioButton" customModule="iCook" customModuleProvider="target">
-                                                    <rect key="frame" x="16" y="11" width="20" height="22"/>
+                                                    <rect key="frame" x="16" y="10.666666666666664" width="20" height="22"/>
                                                     <color key="tintColor" systemColor="systemRedColor"/>
                                                     <state key="normal" image="circle" catalog="system"/>
                                                 </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Limão" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0eN-V8-kgH">
-                                                    <rect key="frame" x="44" y="11.5" width="46" height="20.5"/>
+                                                    <rect key="frame" x="44" y="11.666666666666666" width="46" height="20.333333333333336"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="11E-cK-VuV">
-                                                    <rect key="frame" x="367" y="11.5" width="11" height="21"/>
+                                                    <rect key="frame" x="343" y="11.333333333333336" width="11" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" systemColor="secondaryLabelColor"/>
                                                     <nil key="highlightedColor"/>
@@ -222,6 +224,7 @@
                                                 <constraint firstItem="0eN-V8-kgH" firstAttribute="leading" secondItem="uDi-Qq-f9q" secondAttribute="trailing" constant="8" id="NHl-sh-obJ"/>
                                                 <constraint firstItem="uDi-Qq-f9q" firstAttribute="centerY" secondItem="UZ1-x7-1ZW" secondAttribute="centerY" id="aCg-4f-6P3"/>
                                                 <constraint firstItem="11E-cK-VuV" firstAttribute="centerY" secondItem="UZ1-x7-1ZW" secondAttribute="centerY" id="mc3-0R-LMO"/>
+                                                <constraint firstItem="11E-cK-VuV" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="0eN-V8-kgH" secondAttribute="trailing" constant="8" symbolic="YES" id="stg-TV-RJ3"/>
                                                 <constraint firstItem="0eN-V8-kgH" firstAttribute="centerY" secondItem="UZ1-x7-1ZW" secondAttribute="centerY" id="tJ6-1l-lXQ"/>
                                                 <constraint firstItem="uDi-Qq-f9q" firstAttribute="leading" secondItem="UZ1-x7-1ZW" secondAttribute="leading" constant="16" id="wVg-5c-dWf"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="11E-cK-VuV" secondAttribute="trailing" constant="16" id="x2f-aA-sNZ"/>
@@ -267,11 +270,11 @@
             <objects>
                 <viewController id="vtM-oh-zxL" customClass="ShoppingListAddItemViewController" customModule="iCook" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="it1-zf-dDi">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nome do item" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="l1S-3r-Cl6">
-                                <rect key="frame" x="0.0" y="88" width="414" height="34"/>
+                                <rect key="frame" x="0.0" y="88" width="390" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
@@ -279,7 +282,7 @@
                                 </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Quantidade a ser comprada" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Kfd-TV-O1H">
-                                <rect key="frame" x="0.0" y="138" width="414" height="34"/>
+                                <rect key="frame" x="0.0" y="138" width="390" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
@@ -458,7 +461,7 @@
                     <tabBarItem key="tabBarItem" title="Lista de Compras" image="cart.fill" catalog="system" id="gzS-Jb-BPc"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="lEI-u6-arx">
-                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <rect key="frame" x="0.0" y="44" width="390" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
                         <color key="barTintColor" systemColor="secondarySystemBackgroundColor"/>
@@ -479,7 +482,7 @@
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="yZE-vJ-b3x"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="5Ie-Ly-PDR">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="56"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -522,14 +525,14 @@
     <resources>
         <image name="cart.fill" catalog="system" width="128" height="102"/>
         <image name="circle" catalog="system" width="128" height="121"/>
+        <image name="magnifyingglass" catalog="system" width="128" height="115"/>
+        <image name="mic.fill" catalog="system" width="108" height="128"/>
         <systemColor name="secondaryLabelColor">
             <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="secondarySystemBackgroundColor">
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
-        <image name="magnifyingglass" catalog="system" width="128" height="115"/>
-        <image name="mic.fill" catalog="system" width="108" height="128"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
@@ -541,9 +544,6 @@
         </systemColor>
         <systemColor name="systemGray6Color">
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemRedColor">
-            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemRedColor">
             <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
