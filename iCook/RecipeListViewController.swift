@@ -13,12 +13,16 @@ class RecipeListViewController: UIViewController{
     var recipeList = [Recipe]()
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationController?.setNavigationBarHidden(true, animated: false)
         recipeList.append(Recipe(name: "Croissant Recheado com Queijo", description: "4 porções • 60 min • Trabalhoso", image: UIImage(named: "crossaint")!))
         recipeList.append(Recipe(name: "Macarrão com Molho Branco", description: "2 porções • 15 min • Fácil", image: UIImage(named: "macarrao")!))
         recipeList.append(Recipe(name: "Ovo", description: "Ovo mexido", image: UIImage(named: "ovo")!))
        
     }
-    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.setNavigationBarHidden(true, animated: false)
+    }
 
 }
 

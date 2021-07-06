@@ -42,22 +42,22 @@
             </objects>
             <point key="canvasLocation" x="974" y="833"/>
         </scene>
-        <!--Recipe-->
+        <!--Recipe List-->
         <scene sceneID="L3V-Gc-Sed">
             <objects>
-                <viewController title="Recipe" id="fGM-2x-dwJ" customClass="RecipeListViewController" customModule="iCook" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Recipe List" id="fGM-2x-dwJ" customClass="RecipeListViewController" customModule="iCook" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1hV-fu-WKw">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Receitas" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dnu-1z-kWj">
-                                <rect key="frame" x="16" y="132" width="97" height="29"/>
+                                <rect key="frame" x="16" y="88" width="97" height="29"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Pesquisar por Receitas" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ast-O5-gKV" customClass="DesignableUITextField" customModule="iCook" customModuleProvider="target">
-                                <rect key="frame" x="16" y="168" width="358" height="34"/>
+                                <rect key="frame" x="16" y="124" width="358" height="34"/>
                                 <color key="backgroundColor" systemColor="systemGray6Color"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -75,7 +75,7 @@
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UdA-tD-10l">
-                                <rect key="frame" x="16" y="218" width="358" height="2"/>
+                                <rect key="frame" x="16" y="174" width="358" height="46"/>
                                 <color key="backgroundColor" systemColor="systemGray2Color"/>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Para Você" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" id="sej-Sf-hgQ">
@@ -169,7 +169,8 @@
                             <constraint firstItem="dnu-1z-kWj" firstAttribute="top" secondItem="yCA-b7-yej" secondAttribute="top" constant="44" id="qL7-Fe-nFv"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="cee-Dx-4WZ"/>
+                    <navigationItem key="navigationItem" title="Receitas" id="cee-Dx-4WZ"/>
+                    <nil key="simulatedTopBarMetrics"/>
                     <connections>
                         <segue destination="eXY-SG-L3l" kind="show" id="PVh-j4-sJG"/>
                     </connections>
@@ -186,14 +187,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recipe Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IPI-2D-vWE">
-                                <rect key="frame" x="16" y="88" width="203" height="41"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recipe Name" textAlignment="natural" lineBreakMode="clip" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IPI-2D-vWE">
+                                <rect key="frame" x="16" y="88" width="358" height="40.666666666666657"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="34"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ms5-9V-Xdb">
-                                <rect key="frame" x="16" y="171" width="358" height="175"/>
+                                <rect key="frame" x="16" y="170.66666666666663" width="358" height="175"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="175" id="w2q-DU-Ih3"/>
                                 </constraints>
@@ -204,7 +205,7 @@
                                 </userDefinedRuntimeAttributes>
                             </imageView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="F2q-bD-wuO">
-                                <rect key="frame" x="0.0" y="354" width="390" height="66"/>
+                                <rect key="frame" x="0.0" y="353.66666666666669" width="390" height="66"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="66" id="dPC-TC-NOk"/>
@@ -228,19 +229,19 @@
                                 </cells>
                             </collectionView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ingredientes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nyv-5k-jdi">
-                                <rect key="frame" x="16" y="436" width="126" height="27"/>
+                                <rect key="frame" x="16" y="435.66666666666669" width="126" height="27"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JYD-Oa-16B">
-                                <rect key="frame" x="212" y="433" width="159" height="32"/>
+                                <rect key="frame" x="212" y="432.66666666666669" width="159" height="32"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <color key="tintColor" systemColor="systemRedColor"/>
                                 <state key="normal" title="Adicionar às Compras"/>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="XDW-kz-s0g">
-                                <rect key="frame" x="0.0" y="471" width="390" height="177"/>
+                                <rect key="frame" x="0.0" y="470.66666666666669" width="390" height="177.33333333333331"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Modo de Preparo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gLZ-IZ-J7i">
@@ -256,6 +257,7 @@
                             <constraint firstItem="ms5-9V-Xdb" firstAttribute="trailing" secondItem="Vrk-v1-BDU" secondAttribute="trailingMargin" id="1IY-6L-bkD"/>
                             <constraint firstItem="Nyv-5k-jdi" firstAttribute="top" secondItem="F2q-bD-wuO" secondAttribute="bottom" constant="16" id="AqC-W1-4RO"/>
                             <constraint firstItem="JYD-Oa-16B" firstAttribute="leading" secondItem="Nyv-5k-jdi" secondAttribute="trailing" constant="70" id="B35-RQ-TQ1"/>
+                            <constraint firstItem="aUC-c4-MuI" firstAttribute="trailing" secondItem="IPI-2D-vWE" secondAttribute="trailing" constant="16" id="GKY-lQ-sfV"/>
                             <constraint firstItem="JYD-Oa-16B" firstAttribute="top" secondItem="F2q-bD-wuO" secondAttribute="bottom" constant="13" id="GNr-Qc-Fce"/>
                             <constraint firstItem="XDW-kz-s0g" firstAttribute="top" secondItem="Nyv-5k-jdi" secondAttribute="bottom" constant="8" symbolic="YES" id="GPE-D4-oUN"/>
                             <constraint firstItem="IPI-2D-vWE" firstAttribute="top" secondItem="aUC-c4-MuI" secondAttribute="top" id="ILr-kQ-4xO"/>
@@ -276,7 +278,7 @@
                             <constraint firstItem="gLZ-IZ-J7i" firstAttribute="top" secondItem="XDW-kz-s0g" secondAttribute="bottom" constant="40" id="zfQ-M3-oN2"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="n2T-Ms-Wgn"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
                         <outlet property="recipeImage" destination="ms5-9V-Xdb" id="ANt-IU-szq"/>
                         <outlet property="recipeName" destination="IPI-2D-vWE" id="mfe-6j-tyQ"/>
@@ -311,11 +313,14 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Nz2-GA-rU2" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item 1" id="mbP-Ta-9je"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="led-7V-NJ7">
+                    <navigationBar key="navigationBar" alpha="0.0" contentMode="scaleToFill" id="led-7V-NJ7">
                         <rect key="frame" x="0.0" y="44" width="390" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="V8c-Vg-GOb">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
                     <connections>
                         <segue destination="fGM-2x-dwJ" kind="relationship" relationship="rootViewController" id="Esg-kh-R6d"/>
                     </connections>
