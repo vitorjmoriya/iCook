@@ -16,7 +16,6 @@ class ShoppingListItemCell: UITableViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
     }
     
     override func prepareForReuse() {
@@ -28,14 +27,7 @@ class ShoppingListItemCell: UITableViewCell {
     func addItem(_ item: ShoppingListItemUIModel) {
         self.radioButton.isChecked = item.isChecked
         self.title.text = item.title
-        
-        let quantity: String = item.quantity.isInteger() ? String(Int(item.quantity)) : String(item.quantity)
-        
-        if let quantityUnit = item.quantityUnit {
-            self.quantity.text = "\(quantity) \(quantityUnit)"
-        } else {
-            self.quantity.text = "\(quantity)"
-        }
+        self.quantity.text = item.quantity
     }
 }
 

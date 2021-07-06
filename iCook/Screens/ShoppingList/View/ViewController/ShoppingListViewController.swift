@@ -7,21 +7,42 @@
 
 import UIKit
 
-class ShoppingListViewController: UIViewController {
+protocol ShoppingListViewControllerDelegate {
+    func addShoppingListItem(_ item: ShoppingListItemUIModel)
+}
+
+private let ADD_SHOPPING_LIST_ITEM_SEGUE = "goToShoppingListAddItem"
+
+class ShoppingListViewController: UIViewController, ShoppingListViewControllerDelegate {
+    
     @IBOutlet weak var tableView: UITableView!
     
-    lazy var viewModel = { ShoppingListViewModel() }()
-
+    private lazy var viewModel = { ShoppingListViewModel() }()
+    
+    @IBAction func didSelectAddItem(_ sender: UIBarButtonItem) {
+        self.performSegue(withIdentifier: ADD_SHOPPING_LIST_ITEM_SEGUE, sender: self)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+
         tableView.dataSource = self
         tableView.delegate = self
         
         initViewModel()
     }
-
-    @IBAction func didSelectAddItem(_ sender: UIBarButtonItem) {
-        viewModel.dispatchViewAction(.FetchShoppingList)
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let identifier = segue.identifier
+        
+        if (identifier == ADD_SHOPPING_LIST_ITEM_SEGUE) {
+            let destination = (segue.destination as? UINavigationController)?.viewControllers.first as? ShoppingListAddItemViewController
+            destination?.shoppingListViewControllerDelegate = self
+        }
+    }
+    
+    func addShoppingListItem(_ item: ShoppingListItemUIModel) {
+        viewModel.dispatchViewAction(.AddItem(item))
     }
     
     private func initViewModel() {
@@ -33,29 +54,48 @@ class ShoppingListViewController: UIViewController {
             }
         }
     }
-
+    
 }
 
 //MARK: - TableViewDataSource
 
 extension ShoppingListViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let item = viewModel.items[indexPath.row]
+        let item = viewModel.getItemForIndexPath(indexPath: indexPath)
+
         guard let cell = tableView.dequeueReusableCell(withIdentifier: ShoppingListItemCell.identifier, for: indexPath) as? ShoppingListItemCell else {
             fatalError("")
         }
         
-        cell.radioButton.onDidSelect = { isChecked in
+        cell.radioButton.onDidSelect = { _ in
             self.tableView.selectRow(at: indexPath, animated: true, scrollPosition: .none)
             self.tableView(tableView, didSelectRowAt: indexPath)
         }
-
+        
         cell.addItem(item)
         return cell
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return viewModel.items.count
+        return viewModel.getNumberOfRowsForSection(section: section)
+    }
+    
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let category = viewModel.getSectionHeader(section: section)
+        let header = PaddingLabel(top: 32, bottom: 8, left: 15, right: 0)
+        header.text = category.uppercased()
+        header.textColor = .secondaryLabel
+        header.backgroundColor = .secondarySystemBackground
+        
+        return header
+    }
+    
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 58
+    }
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return viewModel.getNumberOfSections()
     }
 }
 
@@ -64,6 +104,19 @@ extension ShoppingListViewController: UITableViewDataSource {
 extension ShoppingListViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: false)
-        viewModel.dispatchViewAction(.SelectedRow(row: indexPath.row))
+        viewModel.dispatchViewAction(.SelectedRow(indexPath))
+    }
+    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if (editingStyle == .delete) {
+            let isLastItemInSection = viewModel.isLastItemInSection(indexPath: indexPath)
+            viewModel.dispatchViewAction(.DeleteRow(indexPath))
+            if (isLastItemInSection) {
+                let indexSet = IndexSet(arrayLiteral: indexPath.section)
+                tableView.deleteSections(indexSet, with: .automatic)
+            } else {
+                tableView.deleteRows(at: [indexPath], with: .automatic)
+            }
+        }
     }
 }

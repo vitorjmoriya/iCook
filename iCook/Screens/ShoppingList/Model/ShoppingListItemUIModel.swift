@@ -7,10 +7,17 @@
 
 import Foundation
 
-struct ShoppingListItemUIModel {
+struct ShoppingListItemUIModel: Equatable {
     var title: String
-    var quantity: Float
-    var quantityUnit: String? = nil
+    var quantity: String
     var category: String
     var isChecked: Bool
+    
+    static func == (lhs: ShoppingListItemUIModel, rhs: ShoppingListItemUIModel) -> Bool {
+        return
+            lhs.title == rhs.title &&
+            lhs.quantity == rhs.quantity &&
+            lhs.category == rhs.category &&
+            lhs.isChecked == rhs.isChecked
+    }
 }
