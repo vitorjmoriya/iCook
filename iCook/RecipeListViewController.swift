@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 
 class RecipeListViewController: UIViewController{
-    let reuseIdentifier = "cell"
+    
     @IBOutlet weak var ForYouCollectionView: UICollectionView!
     @IBOutlet weak var PopularCollectionView: UICollectionView!
     @IBOutlet weak var breakfastCollectionView: UICollectionView!
@@ -41,7 +41,7 @@ extension RecipeListViewController: UICollectionViewDelegate, UICollectionViewDa
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath as IndexPath) as! MyCollectionViewCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath as IndexPath) as! MyCollectionViewCell
                 
                 // Use the outlet in our custom class to get a reference to the UILabel in the cell
         cell.recipeName.text = self.recipeList[indexPath.row].name // The row value is the same as the index of the desired text within the array.
