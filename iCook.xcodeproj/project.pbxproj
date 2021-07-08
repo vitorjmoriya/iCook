@@ -23,22 +23,14 @@
 		DB0ACF2E268E029500D735C8 /* ShoppingListItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0ACF2D268E029500D735C8 /* ShoppingListItemCell.swift */; };
 		DBB1457B268F43DA0058BDE4 /* ShoppingListAddItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB14579268F43DA0058BDE4 /* ShoppingListAddItemViewController.swift */; };
 		DBB1457E268F5C050058BDE4 /* ShoppingListAddItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB1457D268F5C050058BDE4 /* ShoppingListAddItemViewModel.swift */; };
+		DBF62FCA2695FA2A002461D3 /* NotificationRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF62FC92695FA2A002461D3 /* NotificationRepository.swift */; };
+		DBF62FCC269600E4002461D3 /* NotificationDisclaimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF62FCB269600E4002461D3 /* NotificationDisclaimerViewController.swift */; };
 		DBF76CA8268CBEBE009E5063 /* ShoppingListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF76CA7268CBEBE009E5063 /* ShoppingListViewController.swift */; };
 		DBFFF72526933E7100F6D59B /* PaddingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBFFF72426933E7100F6D59B /* PaddingLabel.swift */; };
+		DBFFF72B2694A92B00F6D59B /* NotificationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBFFF72A2694A92B00F6D59B /* NotificationsViewController.swift */; };
+		DBFFF72D2694A96D00F6D59B /* NotificationsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBFFF72C2694A96D00F6D59B /* NotificationsViewModel.swift */; };
+		DBFFF72F2694A99C00F6D59B /* NotificationsUIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBFFF72E2694A99C00F6D59B /* NotificationsUIModel.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		5F8B001D2697892100BBBB78 /* Embed App Extensions */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 13;
-			files = (
-			);
-			name = "Embed App Extensions";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		5F6A60D32689F9EA00F95162 /* iCook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iCook.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -59,8 +51,13 @@
 		DB0ACF2D268E029500D735C8 /* ShoppingListItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingListItemCell.swift; sourceTree = "<group>"; };
 		DBB14579268F43DA0058BDE4 /* ShoppingListAddItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingListAddItemViewController.swift; sourceTree = "<group>"; };
 		DBB1457D268F5C050058BDE4 /* ShoppingListAddItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingListAddItemViewModel.swift; sourceTree = "<group>"; };
+		DBF62FC92695FA2A002461D3 /* NotificationRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationRepository.swift; sourceTree = "<group>"; };
+		DBF62FCB269600E4002461D3 /* NotificationDisclaimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationDisclaimerViewController.swift; sourceTree = "<group>"; };
 		DBF76CA7268CBEBE009E5063 /* ShoppingListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingListViewController.swift; sourceTree = "<group>"; };
 		DBFFF72426933E7100F6D59B /* PaddingLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaddingLabel.swift; sourceTree = "<group>"; };
+		DBFFF72A2694A92B00F6D59B /* NotificationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsViewController.swift; sourceTree = "<group>"; };
+		DBFFF72C2694A96D00F6D59B /* NotificationsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsViewModel.swift; sourceTree = "<group>"; };
+		DBFFF72E2694A99C00F6D59B /* NotificationsUIModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsUIModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +90,7 @@
 		5F6A60D52689F9EA00F95162 /* iCook */ = {
 			isa = PBXGroup;
 			children = (
+				DBF62FC82695F979002461D3 /* Repositories */,
 				DB0ACF22268DEF0700D735C8 /* Screens */,
 				5F6A60D62689F9EA00F95162 /* AppDelegate.swift */,
 				5F6A60D82689F9EA00F95162 /* SceneDelegate.swift */,
@@ -112,6 +110,7 @@
 		DB0ACF22268DEF0700D735C8 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				DBFFF726269499DE00F6D59B /* Notifications */,
 				DB0ACF23268DEF0F00D735C8 /* ShoppingList */,
 			);
 			path = Screens;
@@ -120,7 +119,7 @@
 		DB0ACF23268DEF0F00D735C8 /* ShoppingList */ = {
 			isa = PBXGroup;
 			children = (
-				DB0ACF28268DF88000D735C8 /* Model */,
+				DB0ACF28268DF88000D735C8 /* UIModel */,
 				DB0ACF25268DEF3400D735C8 /* ViewModel */,
 				DB0ACF24268DEF2400D735C8 /* View */,
 			);
@@ -164,12 +163,55 @@
 			path = ViewController;
 			sourceTree = "<group>";
 		};
-		DB0ACF28268DF88000D735C8 /* Model */ = {
+		DB0ACF28268DF88000D735C8 /* UIModel */ = {
 			isa = PBXGroup;
 			children = (
 				DB0ACF29268DF89200D735C8 /* ShoppingListItemUIModel.swift */,
 			);
-			path = Model;
+			path = UIModel;
+			sourceTree = "<group>";
+		};
+		DBF62FC82695F979002461D3 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				DBF62FC92695FA2A002461D3 /* NotificationRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		DBFFF726269499DE00F6D59B /* Notifications */ = {
+			isa = PBXGroup;
+			children = (
+				DBFFF72926949A0D00F6D59B /* UIModel */,
+				DBFFF72826949A0800F6D59B /* ViewModel */,
+				DBFFF72726949A0300F6D59B /* View */,
+			);
+			path = Notifications;
+			sourceTree = "<group>";
+		};
+		DBFFF72726949A0300F6D59B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DBFFF72A2694A92B00F6D59B /* NotificationsViewController.swift */,
+				DBF62FCB269600E4002461D3 /* NotificationDisclaimerViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DBFFF72826949A0800F6D59B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				DBFFF72C2694A96D00F6D59B /* NotificationsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		DBFFF72926949A0D00F6D59B /* UIModel */ = {
+			isa = PBXGroup;
+			children = (
+				DBFFF72E2694A99C00F6D59B /* NotificationsUIModel.swift */,
+			);
+			path = UIModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -182,7 +224,6 @@
 				5F6A60CF2689F9EA00F95162 /* Sources */,
 				5F6A60D02689F9EA00F95162 /* Frameworks */,
 				5F6A60D12689F9EA00F95162 /* Resources */,
-				5F8B001D2697892100BBBB78 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
@@ -243,12 +284,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBF62FCC269600E4002461D3 /* NotificationDisclaimerViewController.swift in Sources */,
 				DBB1457E268F5C050058BDE4 /* ShoppingListAddItemViewModel.swift in Sources */,
+				DBF62FCA2695FA2A002461D3 /* NotificationRepository.swift in Sources */,
 				5F6A60DB2689F9EA00F95162 /* ViewController.swift in Sources */,
 				5F90ABB3268DF8CF00276FD6 /* DesignableUITextField.swift in Sources */,
 				5F92C8E42693F6E80095F92C /* RecipeViewController.swift in Sources */,
 				5F92C8E226933E920095F92C /* MyCollectionViewCell.swift in Sources */,
 				5F6A60D72689F9EA00F95162 /* AppDelegate.swift in Sources */,
+				DBFFF72F2694A99C00F6D59B /* NotificationsUIModel.swift in Sources */,
 				5F6A60D92689F9EA00F95162 /* SceneDelegate.swift in Sources */,
 				DBB1457B268F43DA0058BDE4 /* ShoppingListAddItemViewController.swift in Sources */,
 				DB0ACF2A268DF89200D735C8 /* ShoppingListItemUIModel.swift in Sources */,
@@ -257,7 +301,9 @@
 				DBF76CA8268CBEBE009E5063 /* ShoppingListViewController.swift in Sources */,
 				DB0ACF2C268E006700D735C8 /* RadioButton.swift in Sources */,
 				DBFFF72526933E7100F6D59B /* PaddingLabel.swift in Sources */,
+				DBFFF72D2694A96D00F6D59B /* NotificationsViewModel.swift in Sources */,
 				5F92C8E0269331010095F92C /* RecipeListViewController.swift in Sources */,
+				DBFFF72B2694A92B00F6D59B /* NotificationsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -402,7 +448,6 @@
 		5F6A60E82689F9EB00F95162 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -421,7 +466,6 @@
 		5F6A60E92689F9EB00F95162 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
