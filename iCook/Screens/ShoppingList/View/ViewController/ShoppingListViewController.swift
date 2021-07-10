@@ -80,20 +80,6 @@ extension ShoppingListViewController: UITableViewDataSource {
         return viewModel.getNumberOfRowsForSection(section: section)
     }
     
-    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        let category = viewModel.getSectionHeader(section: section)
-        let header = PaddingLabel(top: 32, bottom: 8, left: 15, right: 0)
-        header.text = category.uppercased()
-        header.textColor = .secondaryLabel
-        header.backgroundColor = .secondarySystemBackground
-        
-        return header
-    }
-    
-    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 58
-    }
-    
     func numberOfSections(in tableView: UITableView) -> Int {
         return viewModel.getNumberOfSections()
     }
@@ -118,5 +104,20 @@ extension ShoppingListViewController: UITableViewDelegate {
                 tableView.deleteRows(at: [indexPath], with: .automatic)
             }
         }
+    }
+    
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let category = viewModel.getSectionHeader(section: section)
+        let header = PaddingLabel(top: 32, bottom: 8, left: 15, right: 0)
+        header.text = category.uppercased()
+        header.textColor = .secondaryLabel
+        header.backgroundColor = .secondarySystemBackground
+        
+        return header
+    }
+    
+    
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 58
     }
 }

@@ -8,65 +8,37 @@
 import Foundation
 
 class NotificationRepository {
-    private let LUNCH_NOTIFICATION_KEY = "LUNCH_NOTIFICATION_KEY"
-    private let DINNER_NOTIFICATION_KEY = "DINNER_NOTIFICATION_KEY"
-    private let BREAKFAST_NOTIFICATION_KEY = "BREAKFAST_NOTIFICATION_KEY"
-    private let AFTERNOON_SNACK_NOTIFICATION_KEY = "AFTERNOON_SNACK_NOTIFICATION_KEY"
-    private let DISCLAIMER_BEEN_SHOWN_KEY = "DISCLAIMER_BEEN_SHOWN_KEY"
-
-    private var userDefaults = UserDefaults.standard
+    private let dataFilePath = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first?.appendingPathComponent("Notifications.plist")
     
     static let newInstance = NotificationRepository()
     
-    func getNotificationSettings() -> NotificationsUIModel {
-        return NotificationsUIModel(
-            isBreakfastEnabled: isBreakfastNotificationEnabled(),
-            isLunchEnabled: isLunchNotificationEnabled(),
-            isAfternoonSnackEnabled: isAfternoonSnackNotificationEnabled(),
-            isDinnerEnabled: isDinnerNotificationEnabled(),
-            hasDisclaimerBeenShown: hasDisclaimerBeenShown()
-        )
-    }
-    
-    func setLunchNotification(_ isEnabled: Bool) {
-        userDefaults.set(isEnabled, forKey: LUNCH_NOTIFICATION_KEY)
-    }
-    
-    func setDinnerNotification(_ isEnabled: Bool) {
-        userDefaults.set(isEnabled, forKey: DINNER_NOTIFICATION_KEY)
-    }
-    
-    func setBreakfastNotification(_ isEnabled: Bool) {
-        userDefaults.set(isEnabled, forKey: BREAKFAST_NOTIFICATION_KEY)
-    }
-    
-    func setAfternoonSnackNotification(_ isEnabled: Bool) {
-        userDefaults.set(isEnabled, forKey: AFTERNOON_SNACK_NOTIFICATION_KEY)
-    }
- 
-    private func isLunchNotificationEnabled() -> Bool {
-        return userDefaults.bool(forKey: LUNCH_NOTIFICATION_KEY)
-    }
-    
-    private func isDinnerNotificationEnabled() -> Bool {
-        return userDefaults.bool(forKey: DINNER_NOTIFICATION_KEY)
-    }
-    
-    private func isBreakfastNotificationEnabled() -> Bool {
-        return userDefaults.bool(forKey: BREAKFAST_NOTIFICATION_KEY)
-    }
-    
-    private func isAfternoonSnackNotificationEnabled() -> Bool {
-        return userDefaults.bool(forKey: AFTERNOON_SNACK_NOTIFICATION_KEY)
-    }
-    
-    private func hasDisclaimerBeenShown() -> Bool {
-        let hasBeenShown = userDefaults.bool(forKey: DISCLAIMER_BEEN_SHOWN_KEY)
+    func getNotificationSettings() -> NotificationsUIModel? {
+        let decoder = PropertyListDecoder()
         
-        if (!hasBeenShown) {
-            userDefaults.set(true, forKey: DISCLAIMER_BEEN_SHOWN_KEY)
+        do {
+            let data = try Data(contentsOf: dataFilePath!)
+            return try decoder.decode(NotificationsUIModel.self, from: data)
+        } catch {
+            print("Error while decoding notifications \(error)")
+            let model = NotificationsUIModel(
+                breakfast: MealModel(areNotificationsEnabled: false),
+                lunch: MealModel(areNotificationsEnabled: false),
+                afternoonSnack: MealModel(areNotificationsEnabled: false),
+                dinner: MealModel(areNotificationsEnabled: false),
+                hasDisclaimerBeenShown: false
+            )
+            setNotificationSettings(model)
+            return model
         }
-        
-        return hasBeenShown
+    }
+    
+    func setNotificationSettings(_ model: NotificationsUIModel) {
+        let encoder = PropertyListEncoder()
+        do {
+            let data = try encoder.encode(model)
+            try data.write(to: self.dataFilePath!)
+        } catch {
+            print("Error while encoding notifications \(error)")
+        }
     }
 }

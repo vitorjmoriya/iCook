@@ -21,6 +21,7 @@
 		DB0ACF2A268DF89200D735C8 /* ShoppingListItemUIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0ACF29268DF89200D735C8 /* ShoppingListItemUIModel.swift */; };
 		DB0ACF2C268E006700D735C8 /* RadioButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0ACF2B268E006700D735C8 /* RadioButton.swift */; };
 		DB0ACF2E268E029500D735C8 /* ShoppingListItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0ACF2D268E029500D735C8 /* ShoppingListItemCell.swift */; };
+		DB0F299A26974DD300B46AEB /* NotificationLabelCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0F299926974DD300B46AEB /* NotificationLabelCellTableViewCell.swift */; };
 		DBB1457B268F43DA0058BDE4 /* ShoppingListAddItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB14579268F43DA0058BDE4 /* ShoppingListAddItemViewController.swift */; };
 		DBB1457E268F5C050058BDE4 /* ShoppingListAddItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB1457D268F5C050058BDE4 /* ShoppingListAddItemViewModel.swift */; };
 		DBF62FCA2695FA2A002461D3 /* NotificationRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF62FC92695FA2A002461D3 /* NotificationRepository.swift */; };
@@ -49,6 +50,7 @@
 		DB0ACF29268DF89200D735C8 /* ShoppingListItemUIModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingListItemUIModel.swift; sourceTree = "<group>"; };
 		DB0ACF2B268E006700D735C8 /* RadioButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioButton.swift; sourceTree = "<group>"; };
 		DB0ACF2D268E029500D735C8 /* ShoppingListItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingListItemCell.swift; sourceTree = "<group>"; };
+		DB0F299926974DD300B46AEB /* NotificationLabelCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationLabelCellTableViewCell.swift; sourceTree = "<group>"; };
 		DBB14579268F43DA0058BDE4 /* ShoppingListAddItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingListAddItemViewController.swift; sourceTree = "<group>"; };
 		DBB1457D268F5C050058BDE4 /* ShoppingListAddItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingListAddItemViewModel.swift; sourceTree = "<group>"; };
 		DBF62FC92695FA2A002461D3 /* NotificationRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationRepository.swift; sourceTree = "<group>"; };
@@ -171,6 +173,23 @@
 			path = UIModel;
 			sourceTree = "<group>";
 		};
+		DB0F2997269740AC00B46AEB /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				DBFFF72A2694A92B00F6D59B /* NotificationsViewController.swift */,
+				DBF62FCB269600E4002461D3 /* NotificationDisclaimerViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		DB0F2998269740BB00B46AEB /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				DB0F299926974DD300B46AEB /* NotificationLabelCellTableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		DBF62FC82695F979002461D3 /* Repositories */ = {
 			isa = PBXGroup;
 			children = (
@@ -192,8 +211,8 @@
 		DBFFF72726949A0300F6D59B /* View */ = {
 			isa = PBXGroup;
 			children = (
-				DBFFF72A2694A92B00F6D59B /* NotificationsViewController.swift */,
-				DBF62FCB269600E4002461D3 /* NotificationDisclaimerViewController.swift */,
+				DB0F2998269740BB00B46AEB /* Cell */,
+				DB0F2997269740AC00B46AEB /* ViewController */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -301,6 +320,7 @@
 				DBF76CA8268CBEBE009E5063 /* ShoppingListViewController.swift in Sources */,
 				DB0ACF2C268E006700D735C8 /* RadioButton.swift in Sources */,
 				DBFFF72526933E7100F6D59B /* PaddingLabel.swift in Sources */,
+				DB0F299A26974DD300B46AEB /* NotificationLabelCellTableViewCell.swift in Sources */,
 				DBFFF72D2694A96D00F6D59B /* NotificationsViewModel.swift in Sources */,
 				5F92C8E0269331010095F92C /* RecipeListViewController.swift in Sources */,
 				DBFFF72B2694A92B00F6D59B /* NotificationsViewController.swift in Sources */,
