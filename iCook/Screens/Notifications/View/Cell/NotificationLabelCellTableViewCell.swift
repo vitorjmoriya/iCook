@@ -26,7 +26,7 @@ class NotificationLabelCellTableViewCell: UITableViewCell {
     func setCell(switchType: NotificationsViewModel.SwitchType, delegate: NotificationViewControllerDelegate, isOn: Bool) {
         self.switchType = switchType
         self.notificationViewControllerDelegate = delegate
-        self.uiSwitch.setOn(isOn, animated: true)
+        self.uiSwitch.setOn(isOn, animated: false)
     }
     
 }

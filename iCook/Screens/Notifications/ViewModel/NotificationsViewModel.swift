@@ -25,7 +25,6 @@ class NotificationsViewModel: NSObject {
                 return
             }
             self.notificationRepository.setNotificationSettings(model)
-            self.shouldReloadTable?()
         }
     }
     
@@ -39,6 +38,11 @@ class NotificationsViewModel: NSObject {
                 on: on,
                 selectedSwitch: selectedSwitch
             )
+            case .onSoundSwitchChanged(let on, let selectedSwitch): onSoundSwitchChange(
+                on: on,
+                selectedSwitch: selectedSwitch
+            )
+            case .onTimeChanged(let time, let selectedSwitch): onTimeChange(time: time, selectedSwitch: selectedSwitch)
         }
     }
     
@@ -102,27 +106,40 @@ class NotificationsViewModel: NSObject {
     
     private func onLabelSwitchChange(on: Bool, selectedSwitch: SwitchType) {
         updateUIModel(seletectedSwitch: selectedSwitch, isLabelSwitchOn: on)
+        self.shouldReloadTable?()
     }
     
-    private func updateUIModel(seletectedSwitch: SwitchType, isLabelSwitchOn: Bool? = nil, isSoundSwitchOn: Bool? = nil) {
+    private func onSoundSwitchChange(on: Bool, selectedSwitch: SwitchType) {
+        updateUIModel(seletectedSwitch: selectedSwitch, isSoundSwitchOn: on)
+    }
+    
+    private func onTimeChange(time: Date, selectedSwitch: SwitchType) {
+        updateUIModel(seletectedSwitch: selectedSwitch, time: time)
+    }
+    
+    private func updateUIModel(seletectedSwitch: SwitchType, isLabelSwitchOn: Bool? = nil, isSoundSwitchOn: Bool? = nil, time: Date? = nil) {
         guard var model = uiModel else { return }
         
         switch seletectedSwitch {
             case .Breakfast: do {
                 model.breakfast.areNotificationsEnabled = isLabelSwitchOn ?? model.breakfast.areNotificationsEnabled
                 model.breakfast.areSoundNotificationsEnabled = isSoundSwitchOn ?? model.breakfast.areSoundNotificationsEnabled
+                model.breakfast.notificationsTime = time ?? model.breakfast.notificationsTime
             }
             case .Lunch: do {
                 model.lunch.areNotificationsEnabled = isLabelSwitchOn ?? model.lunch.areNotificationsEnabled
                 model.lunch.areSoundNotificationsEnabled = isSoundSwitchOn ?? model.lunch.areSoundNotificationsEnabled
+                model.lunch.notificationsTime = time ?? model.lunch.notificationsTime
             }
             case .AfternoonSnack: do {
                 model.afternoonSnack.areNotificationsEnabled = isLabelSwitchOn ?? model.afternoonSnack.areNotificationsEnabled
                 model.afternoonSnack.areSoundNotificationsEnabled = isSoundSwitchOn ?? model.afternoonSnack.areSoundNotificationsEnabled
+                model.afternoonSnack.notificationsTime = time ?? model.afternoonSnack.notificationsTime
             }
             case .Dinner: do {
                 model.dinner.areNotificationsEnabled = isLabelSwitchOn ?? model.dinner.areNotificationsEnabled
                 model.dinner.areSoundNotificationsEnabled = isSoundSwitchOn ?? model.dinner.areSoundNotificationsEnabled
+                model.dinner.notificationsTime = time ?? model.dinner.notificationsTime
             }
         }
         uiModel = model
@@ -132,6 +149,8 @@ class NotificationsViewModel: NSObject {
         case Init
         case onLabelSwitchChanged(on: Bool, switch: SwitchType)
         case onPermitionChange(granted: Bool)
+        case onSoundSwitchChanged(on: Bool, switch: SwitchType)
+        case onTimeChanged(time: Date, switch: SwitchType)
     }
     
     enum SwitchType {

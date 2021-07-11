@@ -46,7 +46,8 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="74n-vA-7jH">
-                                                    <rect key="frame" x="315" y="6.3333333333333321" width="51" height="30.999999999999996"/>
+                                                    <rect key="frame" x="325" y="6.3333333333333321" width="51" height="30.999999999999996"/>
+                                                    <color key="onTintColor" systemColor="systemRedColor"/>
                                                     <connections>
                                                         <action selector="didTapSwitch:" destination="vhM-Fl-eFg" eventType="valueChanged" id="vNs-xO-ZUb"/>
                                                     </connections>
@@ -59,7 +60,7 @@
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="trailing" secondItem="74n-vA-7jH" secondAttribute="trailing" constant="26" id="7sY-cm-uNN"/>
+                                                <constraint firstAttribute="trailing" secondItem="74n-vA-7jH" secondAttribute="trailing" constant="16" id="7sY-cm-uNN"/>
                                                 <constraint firstItem="QhZ-8w-vv8" firstAttribute="centerY" secondItem="6PJ-vN-5IE" secondAttribute="centerY" id="abn-s7-n0S"/>
                                                 <constraint firstItem="74n-vA-7jH" firstAttribute="centerY" secondItem="6PJ-vN-5IE" secondAttribute="centerY" id="rPF-ai-JW2"/>
                                                 <constraint firstItem="QhZ-8w-vv8" firstAttribute="leading" secondItem="6PJ-vN-5IE" secondAttribute="leadingMargin" id="wo3-ds-FE7"/>
@@ -67,6 +68,72 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="uiSwitch" destination="74n-vA-7jH" id="L5c-Vx-P9B"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="notificationSoundCell" id="tZV-ez-Lvd" userLabel="NotificationSoundCell" customClass="NotificationSoundTableViewCell" customModule="iCook" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="68.000001907348633" width="390" height="43.666667938232422"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="tZV-ez-Lvd" id="3M1-pR-CDD">
+                                            <rect key="frame" x="0.0" y="0.0" width="390" height="43.666667938232422"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="e9c-G5-71Y">
+                                                    <rect key="frame" x="325" y="6.3333333333333321" width="51" height="30.999999999999996"/>
+                                                    <color key="onTintColor" systemColor="systemRedColor"/>
+                                                    <connections>
+                                                        <action selector="didTapSwitch:" destination="tZV-ez-Lvd" eventType="valueChanged" id="LAj-00-J6r"/>
+                                                    </connections>
+                                                </switch>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Alarme Sonoro" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="abC-T3-KOZ">
+                                                    <rect key="frame" x="20" y="11.333333333333336" width="113" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="e9c-G5-71Y" firstAttribute="centerY" secondItem="3M1-pR-CDD" secondAttribute="centerY" id="Tve-v3-bor"/>
+                                                <constraint firstItem="abC-T3-KOZ" firstAttribute="centerY" secondItem="3M1-pR-CDD" secondAttribute="centerY" id="Waf-Lg-FqY"/>
+                                                <constraint firstItem="abC-T3-KOZ" firstAttribute="leading" secondItem="3M1-pR-CDD" secondAttribute="leadingMargin" id="iUM-g8-gUe"/>
+                                                <constraint firstAttribute="trailing" secondItem="e9c-G5-71Y" secondAttribute="trailing" constant="16" id="rA3-GN-E64"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="uiSwitch" destination="e9c-G5-71Y" id="nq3-fQ-28g"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="notificationTimeCell" id="Ge3-P6-DUj" userLabel="NotificationTimeCell" customClass="NotificationTimeTableViewCell" customModule="iCook" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="111.66666984558105" width="390" height="62.333332061767578"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Ge3-P6-DUj" id="Ef3-O1-AhN">
+                                            <rect key="frame" x="0.0" y="0.0" width="390" height="62.333332061767578"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Horário" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HAB-vg-pTP">
+                                                    <rect key="frame" x="20.000000000000004" y="20.666666666666668" width="56.333333333333343" height="21.000000000000004"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <datePicker contentMode="scaleToFill" semanticContentAttribute="playback" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" style="inline" translatesAutoresizingMaskIntoConstraints="NO" id="YqR-ep-w7q">
+                                                    <rect key="frame" x="185" y="6" width="189" height="50"/>
+                                                    <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
+                                                    <color key="tintColor" systemColor="systemRedColor"/>
+                                                    <connections>
+                                                        <action selector="timeDidChange:" destination="Ge3-P6-DUj" eventType="editingDidEnd" id="nd0-ND-kHX"/>
+                                                    </connections>
+                                                </datePicker>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="HAB-vg-pTP" firstAttribute="leading" secondItem="Ef3-O1-AhN" secondAttribute="leadingMargin" id="6zl-pe-rXp"/>
+                                                <constraint firstItem="HAB-vg-pTP" firstAttribute="centerY" secondItem="Ef3-O1-AhN" secondAttribute="centerY" id="7XZ-k2-zFv"/>
+                                                <constraint firstItem="YqR-ep-w7q" firstAttribute="top" secondItem="Ef3-O1-AhN" secondAttribute="top" constant="6" id="Hdl-ni-1AF"/>
+                                                <constraint firstAttribute="bottom" secondItem="YqR-ep-w7q" secondAttribute="bottom" constant="6" id="bhD-Re-OC2"/>
+                                                <constraint firstAttribute="trailing" secondItem="YqR-ep-w7q" secondAttribute="trailing" constant="16" id="hxI-8F-p5J"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="timePicker" destination="YqR-ep-w7q" id="4M9-t2-Ho0"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>

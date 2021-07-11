@@ -13,6 +13,10 @@ protocol NotificationViewControllerDelegate {
     func onPermitionNotificationChange(granted: Bool)
     
     func onLabelSwitchChange(on: Bool, notificationSwitch: NotificationsViewModel.SwitchType, sender: UISwitch)
+    
+    func onSoundSwitchChange(on: Bool, notificationSwitch: NotificationsViewModel.SwitchType)
+    
+    func onTimeChange(time: Date, notificationSwitch: NotificationsViewModel.SwitchType)
 }
 
 class NotificationsViewController: UIViewController {
@@ -20,12 +24,9 @@ class NotificationsViewController: UIViewController {
     
     lazy var viewModel = { NotificationsViewModel() }()
     
-    override func viewWillAppear(_ animated: Bool) {
-        initViewModel()
-    }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
+        initViewModel()
         initTableView()
     }
     
@@ -87,6 +88,16 @@ extension NotificationsViewController: NotificationViewControllerDelegate {
     func onPermitionNotificationChange(granted: Bool) {
         viewModel.dispatchViewAction(.onPermitionChange(granted: granted))
     }
+    
+    func onSoundSwitchChange(on: Bool, notificationSwitch: NotificationsViewModel.SwitchType) {
+        viewModel.dispatchViewAction(.onSoundSwitchChanged(on: on, switch: notificationSwitch))
+    }
+    
+    func onTimeChange(time: Date, notificationSwitch: NotificationsViewModel.SwitchType) {
+        viewModel.dispatchViewAction(
+            .onTimeChanged(time: time, switch: notificationSwitch)
+        )
+    }
 }
 
 
@@ -115,16 +126,16 @@ extension NotificationsViewController: UITableViewDataSource {
             cell.setCell(switchType: switchType, delegate: self, isOn: mealModel.areNotificationsEnabled)
             return cell
         } else if (indexPath.row == 1) {
-            guard let cell = tableView.dequeueReusableCell(withIdentifier: NotificationLabelCellTableViewCell.identifier) as? NotificationLabelCellTableViewCell else {
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: NotificationSoundTableViewCell.identifier) as? NotificationSoundTableViewCell else {
                 fatalError("Could not find cell with given identifier")
             }
-            cell.setCell(switchType: switchType, delegate: self, isOn: mealModel.areSoundNotificationsEnabled ?? false)
+            cell.setCell(switchType: switchType, delegate: self, isOn: mealModel.areSoundNotificationsEnabled)
             return cell
         } else if (indexPath.row == 2) {
-            guard let cell = tableView.dequeueReusableCell(withIdentifier: NotificationLabelCellTableViewCell.identifier) as? NotificationLabelCellTableViewCell else {
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: NotificationTimeTableViewCell.identifier) as? NotificationTimeTableViewCell else {
                 fatalError("Could not find cell with given identifier")
             }
-            cell.setCell(switchType: switchType, delegate: self, isOn: mealModel.areSoundNotificationsEnabled ?? false)
+            cell.setCell(switchType: switchType, delegate: self, time: mealModel.notificationsTime)
             return cell
         } else {
             return UITableViewCell()
