@@ -113,7 +113,6 @@ extension NotificationsViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        //        let cell: BaseNotificationTableViewCell? To this later! Falta fazer esse mano e lidar com os dados
         guard let mealModel = viewModel.getMealModelForIndexPath(indexPath) else {
             fatalError("Could not load mealModel. Probably uiModel has not been loaded yet")
         }
