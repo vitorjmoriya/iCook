@@ -1,0 +1,16 @@
+PODS:
+  - CollectionPickerView (0.1.3)
+
+DEPENDENCIES:
+  - CollectionPickerView
+
+SPEC REPOS:
+  trunk:
+    - CollectionPickerView
+
+SPEC CHECKSUMS:
+  CollectionPickerView: f05e0ece3f345cf468671d5bc5e6502ab50de193
+
+PODFILE CHECKSUM: ebeacd357f0f5e8b7a135d13e07b908fe9f6f2ec
+
+COCOAPODS: 1.10.1
