@@ -22,6 +22,9 @@
 		DB0ACF2C268E006700D735C8 /* RadioButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0ACF2B268E006700D735C8 /* RadioButton.swift */; };
 		DB0ACF2E268E029500D735C8 /* ShoppingListItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0ACF2D268E029500D735C8 /* ShoppingListItemCell.swift */; };
 		DB0F299A26974DD300B46AEB /* NotificationLabelCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0F299926974DD300B46AEB /* NotificationLabelCellTableViewCell.swift */; };
+		DBAACAF6269C99DC009C5925 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBAACAF5269C99DC009C5925 /* TabBarController.swift */; };
+		DBAACAF9269CC320009C5925 /* UserPreferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBAACAF8269CC320009C5925 /* UserPreferences.swift */; };
+		DBAACAFE269CC7D1009C5925 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBAACAFD269CC7D1009C5925 /* OnboardingViewController.swift */; };
 		DBB1457B268F43DA0058BDE4 /* ShoppingListAddItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB14579268F43DA0058BDE4 /* ShoppingListAddItemViewController.swift */; };
 		DBB1457E268F5C050058BDE4 /* ShoppingListAddItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB1457D268F5C050058BDE4 /* ShoppingListAddItemViewModel.swift */; };
 		DBE27AF32699FAC5004564A8 /* NotificationSoundTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE27AF22699FAC5004564A8 /* NotificationSoundTableViewCell.swift */; };
@@ -53,6 +56,9 @@
 		DB0ACF2B268E006700D735C8 /* RadioButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioButton.swift; sourceTree = "<group>"; };
 		DB0ACF2D268E029500D735C8 /* ShoppingListItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingListItemCell.swift; sourceTree = "<group>"; };
 		DB0F299926974DD300B46AEB /* NotificationLabelCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationLabelCellTableViewCell.swift; sourceTree = "<group>"; };
+		DBAACAF5269C99DC009C5925 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		DBAACAF8269CC320009C5925 /* UserPreferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPreferences.swift; sourceTree = "<group>"; };
+		DBAACAFD269CC7D1009C5925 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		DBB14579268F43DA0058BDE4 /* ShoppingListAddItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingListAddItemViewController.swift; sourceTree = "<group>"; };
 		DBB1457D268F5C050058BDE4 /* ShoppingListAddItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingListAddItemViewModel.swift; sourceTree = "<group>"; };
 		DBE27AF22699FAC5004564A8 /* NotificationSoundTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationSoundTableViewCell.swift; sourceTree = "<group>"; };
@@ -109,6 +115,8 @@
 				5F92C8DF269331010095F92C /* RecipeListViewController.swift */,
 				5F92C8E126933E910095F92C /* MyCollectionViewCell.swift */,
 				5F92C8E32693F6E80095F92C /* RecipeViewController.swift */,
+				DBAACAF8269CC320009C5925 /* UserPreferences.swift */,
+				DBAACAF5269C99DC009C5925 /* TabBarController.swift */,
 			);
 			path = iCook;
 			sourceTree = "<group>";
@@ -116,6 +124,7 @@
 		DB0ACF22268DEF0700D735C8 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				DBAACAFA269CC7A6009C5925 /* Onboarding */,
 				DBFFF726269499DE00F6D59B /* Notifications */,
 				DB0ACF23268DEF0F00D735C8 /* ShoppingList */,
 			);
@@ -194,6 +203,30 @@
 				DBE27AF4269A2284004564A8 /* NotificationTimeTableViewCell.swift */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		DBAACAFA269CC7A6009C5925 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				DBAACAFB269CC7AE009C5925 /* View */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		DBAACAFB269CC7AE009C5925 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DBAACAFC269CC7B8009C5925 /* ViewController */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DBAACAFC269CC7B8009C5925 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				DBAACAFD269CC7D1009C5925 /* OnboardingViewController.swift */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 		DBF62FC82695F979002461D3 /* Repositories */ = {
@@ -321,6 +354,9 @@
 				DBFFF72F2694A99C00F6D59B /* NotificationsUIModel.swift in Sources */,
 				5F6A60D92689F9EA00F95162 /* SceneDelegate.swift in Sources */,
 				DBE27AF5269A2284004564A8 /* NotificationTimeTableViewCell.swift in Sources */,
+				DBAACAF6269C99DC009C5925 /* TabBarController.swift in Sources */,
+				DBAACAFE269CC7D1009C5925 /* OnboardingViewController.swift in Sources */,
+				DBAACAF9269CC320009C5925 /* UserPreferences.swift in Sources */,
 				DBB1457B268F43DA0058BDE4 /* ShoppingListAddItemViewController.swift in Sources */,
 				DB0ACF2A268DF89200D735C8 /* ShoppingListItemUIModel.swift in Sources */,
 				DB0ACF21268DEEA300D735C8 /* ShoppingListViewModel.swift in Sources */,
