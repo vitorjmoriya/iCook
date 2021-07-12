@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -17,6 +17,21 @@
 		5F92C8E0269331010095F92C /* RecipeListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F92C8DF269331010095F92C /* RecipeListViewController.swift */; };
 		5F92C8E226933E920095F92C /* MyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F92C8E126933E910095F92C /* MyCollectionViewCell.swift */; };
 		5F92C8E42693F6E80095F92C /* RecipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F92C8E32693F6E80095F92C /* RecipeViewController.swift */; };
+		9133BDD5269BEE6F005F8489 /* SF-Pro-Rounded-Heavy.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9133BDCC269BEE6F005F8489 /* SF-Pro-Rounded-Heavy.otf */; };
+		9133BDD6269BEE6F005F8489 /* SF-Pro-Rounded-Ultralight.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9133BDCD269BEE6F005F8489 /* SF-Pro-Rounded-Ultralight.otf */; };
+		9133BDD7269BEE6F005F8489 /* SF-Pro-Rounded-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9133BDCE269BEE6F005F8489 /* SF-Pro-Rounded-Thin.otf */; };
+		9133BDD8269BEE6F005F8489 /* SF-Pro-Rounded-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9133BDCF269BEE6F005F8489 /* SF-Pro-Rounded-Black.otf */; };
+		9133BDD9269BEE6F005F8489 /* SF-Pro-Rounded-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9133BDD0269BEE6F005F8489 /* SF-Pro-Rounded-Regular.otf */; };
+		9133BDDA269BEE6F005F8489 /* SF-Pro-Rounded-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9133BDD1269BEE6F005F8489 /* SF-Pro-Rounded-Medium.otf */; };
+		9133BDDB269BEE6F005F8489 /* SF-Pro-Rounded-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9133BDD2269BEE6F005F8489 /* SF-Pro-Rounded-Bold.otf */; };
+		9133BDDC269BEE6F005F8489 /* SF-Pro-Rounded-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9133BDD3269BEE6F005F8489 /* SF-Pro-Rounded-Semibold.otf */; };
+		9133BDDD269BEE6F005F8489 /* SF-Pro-Rounded-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9133BDD4269BEE6F005F8489 /* SF-Pro-Rounded-Light.otf */; };
+		9133BDEB269BF603005F8489 /* DiaUiModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9133BDEA269BF603005F8489 /* DiaUiModel.swift */; };
+		9133BDEE269BFFDA005F8489 /* PlanCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9133BDED269BFFDA005F8489 /* PlanCollectionViewCell.swift */; };
+		913D1CBD269A103800A51245 /* PlanningViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913D1CBC269A103800A51245 /* PlanningViewController.swift */; };
+		913D1CFB269A4B3F00A51245 /* DateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913D1CFA269A4B3F00A51245 /* DateModel.swift */; };
+		913D1D03269A7FE800A51245 /* PlanningDateModelViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913D1D02269A7FE800A51245 /* PlanningDateModelViewModel.swift */; };
+		A482E6E7FEE842EE78C13E09 /* Pods_iCook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0D9C37DA4DC1746741B2F3E /* Pods_iCook.framework */; };
 		DB0ACF21268DEEA300D735C8 /* ShoppingListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0ACF20268DEEA300D735C8 /* ShoppingListViewModel.swift */; };
 		DB0ACF2A268DF89200D735C8 /* ShoppingListItemUIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0ACF29268DF89200D735C8 /* ShoppingListItemUIModel.swift */; };
 		DB0ACF2C268E006700D735C8 /* RadioButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0ACF2B268E006700D735C8 /* RadioButton.swift */; };
@@ -51,6 +66,23 @@
 		5F92C8DF269331010095F92C /* RecipeListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeListViewController.swift; sourceTree = "<group>"; };
 		5F92C8E126933E910095F92C /* MyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCollectionViewCell.swift; sourceTree = "<group>"; };
 		5F92C8E32693F6E80095F92C /* RecipeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeViewController.swift; sourceTree = "<group>"; };
+		9133BDCC269BEE6F005F8489 /* SF-Pro-Rounded-Heavy.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Pro-Rounded-Heavy.otf"; path = "../../../../../Downloads/SF Pro Rounded/SF-Pro-Rounded-Heavy.otf"; sourceTree = "<group>"; };
+		9133BDCD269BEE6F005F8489 /* SF-Pro-Rounded-Ultralight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Pro-Rounded-Ultralight.otf"; path = "../../../../../Downloads/SF Pro Rounded/SF-Pro-Rounded-Ultralight.otf"; sourceTree = "<group>"; };
+		9133BDCE269BEE6F005F8489 /* SF-Pro-Rounded-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Pro-Rounded-Thin.otf"; path = "../../../../../Downloads/SF Pro Rounded/SF-Pro-Rounded-Thin.otf"; sourceTree = "<group>"; };
+		9133BDCF269BEE6F005F8489 /* SF-Pro-Rounded-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Pro-Rounded-Black.otf"; path = "../../../../../Downloads/SF Pro Rounded/SF-Pro-Rounded-Black.otf"; sourceTree = "<group>"; };
+		9133BDD0269BEE6F005F8489 /* SF-Pro-Rounded-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Pro-Rounded-Regular.otf"; path = "../../../../../Downloads/SF Pro Rounded/SF-Pro-Rounded-Regular.otf"; sourceTree = "<group>"; };
+		9133BDD1269BEE6F005F8489 /* SF-Pro-Rounded-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Pro-Rounded-Medium.otf"; path = "../../../../../Downloads/SF Pro Rounded/SF-Pro-Rounded-Medium.otf"; sourceTree = "<group>"; };
+		9133BDD2269BEE6F005F8489 /* SF-Pro-Rounded-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Pro-Rounded-Bold.otf"; path = "../../../../../Downloads/SF Pro Rounded/SF-Pro-Rounded-Bold.otf"; sourceTree = "<group>"; };
+		9133BDD3269BEE6F005F8489 /* SF-Pro-Rounded-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Pro-Rounded-Semibold.otf"; path = "../../../../../Downloads/SF Pro Rounded/SF-Pro-Rounded-Semibold.otf"; sourceTree = "<group>"; };
+		9133BDD4269BEE6F005F8489 /* SF-Pro-Rounded-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Pro-Rounded-Light.otf"; path = "../../../../../Downloads/SF Pro Rounded/SF-Pro-Rounded-Light.otf"; sourceTree = "<group>"; };
+		9133BDEA269BF603005F8489 /* DiaUiModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaUiModel.swift; sourceTree = "<group>"; };
+		9133BDED269BFFDA005F8489 /* PlanCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanCollectionViewCell.swift; sourceTree = "<group>"; };
+		913D1CBC269A103800A51245 /* PlanningViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanningViewController.swift; sourceTree = "<group>"; };
+		913D1CFA269A4B3F00A51245 /* DateModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateModel.swift; sourceTree = "<group>"; };
+		913D1D02269A7FE800A51245 /* PlanningDateModelViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanningDateModelViewModel.swift; sourceTree = "<group>"; };
+		A0D9C37DA4DC1746741B2F3E /* Pods_iCook.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iCook.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B08D44095E22F263EF03A38C /* Pods-iCook.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iCook.debug.xcconfig"; path = "Target Support Files/Pods-iCook/Pods-iCook.debug.xcconfig"; sourceTree = "<group>"; };
+		C50C345C15F1CCC81A617293 /* Pods-iCook.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iCook.release.xcconfig"; path = "Target Support Files/Pods-iCook/Pods-iCook.release.xcconfig"; sourceTree = "<group>"; };
 		DB0ACF20268DEEA300D735C8 /* ShoppingListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingListViewModel.swift; sourceTree = "<group>"; };
 		DB0ACF29268DF89200D735C8 /* ShoppingListItemUIModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingListItemUIModel.swift; sourceTree = "<group>"; };
 		DB0ACF2B268E006700D735C8 /* RadioButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioButton.swift; sourceTree = "<group>"; };
@@ -77,17 +109,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A482E6E7FEE842EE78C13E09 /* Pods_iCook.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		53EB88D9550D5D608465B737 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A0D9C37DA4DC1746741B2F3E /* Pods_iCook.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		5F6A60CA2689F9EA00F95162 = {
 			isa = PBXGroup;
 			children = (
 				5F6A60D52689F9EA00F95162 /* iCook */,
 				5F6A60D42689F9EA00F95162 /* Products */,
+				DA9AE2C3BA32D9FF3AACFE6C /* Pods */,
+				53EB88D9550D5D608465B737 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -102,6 +145,7 @@
 		5F6A60D52689F9EA00F95162 /* iCook */ = {
 			isa = PBXGroup;
 			children = (
+				913D1CD7269A30B500A51245 /* fonts */,
 				DBF62FC82695F979002461D3 /* Repositories */,
 				DB0ACF22268DEF0700D735C8 /* Screens */,
 				5F6A60D62689F9EA00F95162 /* AppDelegate.swift */,
@@ -121,10 +165,71 @@
 			path = iCook;
 			sourceTree = "<group>";
 		};
+		913D1CBB269A100E00A51245 /* Planning */ = {
+			isa = PBXGroup;
+			children = (
+				913D1D05269A849500A51245 /* ViewController */,
+				913D1CFD269A7DA400A51245 /* ViewModel */,
+				913D1CF5269A496400A51245 /* UIModel */,
+			);
+			path = Planning;
+			sourceTree = "<group>";
+		};
+		913D1CD7269A30B500A51245 /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				9133BDCF269BEE6F005F8489 /* SF-Pro-Rounded-Black.otf */,
+				9133BDD2269BEE6F005F8489 /* SF-Pro-Rounded-Bold.otf */,
+				9133BDCC269BEE6F005F8489 /* SF-Pro-Rounded-Heavy.otf */,
+				9133BDD4269BEE6F005F8489 /* SF-Pro-Rounded-Light.otf */,
+				9133BDD1269BEE6F005F8489 /* SF-Pro-Rounded-Medium.otf */,
+				9133BDD0269BEE6F005F8489 /* SF-Pro-Rounded-Regular.otf */,
+				9133BDD3269BEE6F005F8489 /* SF-Pro-Rounded-Semibold.otf */,
+				9133BDCE269BEE6F005F8489 /* SF-Pro-Rounded-Thin.otf */,
+				9133BDCD269BEE6F005F8489 /* SF-Pro-Rounded-Ultralight.otf */,
+			);
+			path = fonts;
+			sourceTree = "<group>";
+		};
+		913D1CF5269A496400A51245 /* UIModel */ = {
+			isa = PBXGroup;
+			children = (
+				913D1CFA269A4B3F00A51245 /* DateModel.swift */,
+				9133BDEA269BF603005F8489 /* DiaUiModel.swift */,
+				9133BDED269BFFDA005F8489 /* PlanCollectionViewCell.swift */,
+			);
+			path = UIModel;
+			sourceTree = "<group>";
+		};
+		913D1CFD269A7DA400A51245 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				913D1D02269A7FE800A51245 /* PlanningDateModelViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		913D1D05269A849500A51245 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				913D1CBC269A103800A51245 /* PlanningViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		DA9AE2C3BA32D9FF3AACFE6C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B08D44095E22F263EF03A38C /* Pods-iCook.debug.xcconfig */,
+				C50C345C15F1CCC81A617293 /* Pods-iCook.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		DB0ACF22268DEF0700D735C8 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
-				DBAACAFA269CC7A6009C5925 /* Onboarding */,
+				913D1CBB269A100E00A51245 /* Planning */,
 				DBFFF726269499DE00F6D59B /* Notifications */,
 				DB0ACF23268DEF0F00D735C8 /* ShoppingList */,
 			);
@@ -279,9 +384,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5F6A60E72689F9EB00F95162 /* Build configuration list for PBXNativeTarget "iCook" */;
 			buildPhases = (
+				3E8165F803EC344F03225258 /* [CP] Check Pods Manifest.lock */,
 				5F6A60CF2689F9EA00F95162 /* Sources */,
 				5F6A60D02689F9EA00F95162 /* Frameworks */,
 				5F6A60D12689F9EA00F95162 /* Resources */,
+				1D1B208FA64A7535F86E9581 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -329,13 +436,64 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9133BDDA269BEE6F005F8489 /* SF-Pro-Rounded-Medium.otf in Resources */,
+				9133BDDD269BEE6F005F8489 /* SF-Pro-Rounded-Light.otf in Resources */,
 				5F6A60E32689F9EB00F95162 /* LaunchScreen.storyboard in Resources */,
+				9133BDDC269BEE6F005F8489 /* SF-Pro-Rounded-Semibold.otf in Resources */,
 				5F6A60E02689F9EB00F95162 /* Assets.xcassets in Resources */,
+				9133BDD5269BEE6F005F8489 /* SF-Pro-Rounded-Heavy.otf in Resources */,
+				9133BDD8269BEE6F005F8489 /* SF-Pro-Rounded-Black.otf in Resources */,
+				9133BDD7269BEE6F005F8489 /* SF-Pro-Rounded-Thin.otf in Resources */,
+				9133BDD9269BEE6F005F8489 /* SF-Pro-Rounded-Regular.otf in Resources */,
+				9133BDD6269BEE6F005F8489 /* SF-Pro-Rounded-Ultralight.otf in Resources */,
 				5F6A60DE2689F9EA00F95162 /* Main.storyboard in Resources */,
+				9133BDDB269BEE6F005F8489 /* SF-Pro-Rounded-Bold.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1D1B208FA64A7535F86E9581 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iCook/Pods-iCook-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iCook/Pods-iCook-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iCook/Pods-iCook-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3E8165F803EC344F03225258 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iCook-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5F6A60CF2689F9EA00F95162 /* Sources */ = {
@@ -345,12 +503,16 @@
 				DBF62FCC269600E4002461D3 /* NotificationDisclaimerViewController.swift in Sources */,
 				DBB1457E268F5C050058BDE4 /* ShoppingListAddItemViewModel.swift in Sources */,
 				DBF62FCA2695FA2A002461D3 /* NotificationRepository.swift in Sources */,
+				913D1CBD269A103800A51245 /* PlanningViewController.swift in Sources */,
 				5F6A60DB2689F9EA00F95162 /* ViewController.swift in Sources */,
+				9133BDEE269BFFDA005F8489 /* PlanCollectionViewCell.swift in Sources */,
 				5F90ABB3268DF8CF00276FD6 /* DesignableUITextField.swift in Sources */,
 				5F92C8E42693F6E80095F92C /* RecipeViewController.swift in Sources */,
+				913D1CFB269A4B3F00A51245 /* DateModel.swift in Sources */,
 				5F92C8E226933E920095F92C /* MyCollectionViewCell.swift in Sources */,
 				5F6A60D72689F9EA00F95162 /* AppDelegate.swift in Sources */,
 				DBE27AF32699FAC5004564A8 /* NotificationSoundTableViewCell.swift in Sources */,
+				9133BDEB269BF603005F8489 /* DiaUiModel.swift in Sources */,
 				DBFFF72F2694A99C00F6D59B /* NotificationsUIModel.swift in Sources */,
 				5F6A60D92689F9EA00F95162 /* SceneDelegate.swift in Sources */,
 				DBE27AF5269A2284004564A8 /* NotificationTimeTableViewCell.swift in Sources */,
@@ -358,6 +520,7 @@
 				DBAACAFE269CC7D1009C5925 /* OnboardingViewController.swift in Sources */,
 				DBAACAF9269CC320009C5925 /* UserPreferences.swift in Sources */,
 				DBB1457B268F43DA0058BDE4 /* ShoppingListAddItemViewController.swift in Sources */,
+				913D1D03269A7FE800A51245 /* PlanningDateModelViewModel.swift in Sources */,
 				DB0ACF2A268DF89200D735C8 /* ShoppingListItemUIModel.swift in Sources */,
 				DB0ACF21268DEEA300D735C8 /* ShoppingListViewModel.swift in Sources */,
 				DB0ACF2E268E029500D735C8 /* ShoppingListItemCell.swift in Sources */,
@@ -511,11 +674,14 @@
 		};
 		5F6A60E82689F9EB00F95162 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B08D44095E22F263EF03A38C /* Pods-iCook.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WLFN74QARN;
 				INFOPLIST_FILE = iCook/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -529,11 +695,14 @@
 		};
 		5F6A60E92689F9EB00F95162 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C50C345C15F1CCC81A617293 /* Pods-iCook.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WLFN74QARN;
 				INFOPLIST_FILE = iCook/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
