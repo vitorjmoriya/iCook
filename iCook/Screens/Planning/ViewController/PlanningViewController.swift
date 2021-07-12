@@ -44,7 +44,12 @@ class PlanningViewController: UIViewController {
     @IBOutlet weak var notficationIcon: UIImageView!
     @IBOutlet weak var copyPlanningNotification: UIImageView!
     
+    
+    
     let titles = ["D", "S", "T", "Q", "Q", "S", "S", "D", "S", "T"]
+    var data: [DiaUiModel] = []
+    var getting: PlanningDatetViewModel?
+    
    
     
     let font = UIFont(name: "HelveticaNeue", size: 13)!
@@ -56,6 +61,27 @@ class PlanningViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+        self.data.append(
+            DiaUiModel(dia: "Hoje, 12 de julho", spoon: "3Spoon", diaLetra: "S", coffeeBreak: "crossaint, crossaint, crossaint", lunch: "crossaint, crossaint, crossaint", dinner: "crossaint, crossaint, crossaint") )
+        self.data.append(
+            DiaUiModel(dia: "amanhã, 13 de julho", spoon: "3Spoon", diaLetra: "T", coffeeBreak: "crossaint, crossaint, crossaint", lunch: "crossaint, crossaint, crossaint", dinner: "crossaint, crossaint, crossaint") )
+        self.data.append(
+            DiaUiModel(dia: "15 de julho", spoon: "3Spoon", diaLetra: "Q", coffeeBreak: "crossaint, crossaint, crossaint", lunch: "crossaint, crossaint, crossaint", dinner: "crossaint, crossaint, crossaint") )
+        self.data.append(
+            DiaUiModel(dia: "15 de julho", spoon: "3Spoon", diaLetra: "Q", coffeeBreak: "crossaint, crossaint, crossaint", lunch: "crossaint, crossaint, crossaint", dinner: "crossaint, crossaint, crossaint") )
+        self.data.append(
+            DiaUiModel(dia: "16 de julho", spoon: "3Spoon", diaLetra: "S", coffeeBreak: "crossaint, crossaint, crossaint", lunch: "crossaint, crossaint, crossaint", dinner: "crossaint, crossaint, crossaint") )
+        self.data.append(
+            DiaUiModel(dia: "17 de julho", spoon: "3Spoon", diaLetra: "S", coffeeBreak: "crossaint, crossaint, crossaint", lunch: "crossaint, crossaint, crossaint", dinner: "crossaint, crossaint, crossaint") )
+        self.data.append(
+            DiaUiModel(dia: "18 de julho", spoon: "3Spoon", diaLetra: "D", coffeeBreak: "crossaint, crossaint, crossaint", lunch: "crossaint, crossaint, crossaint", dinner: "crossaint, crossaint, crossaint") )
+        self.data.append(
+            DiaUiModel(dia: "19 de julho", spoon: "3Spoon", diaLetra: "S", coffeeBreak: "crossaint, crossaint, crossaint", lunch: "crossaint, crossaint, crossaint", dinner: "crossaint, crossaint, crossaint") )
+        self.data.append(
+            DiaUiModel(dia: "20 de julho", spoon: "3Spoon", diaLetra: "T", coffeeBreak: "crossaint, crossaint, crossaint", lunch: "crossaint, crossaint, crossaint", dinner: "crossaint, crossaint, crossaint") )
+        
         
         //editButton.translatesAutoresizingMaskIntoConstraints = false
         //editButton.widthAnchor.constraint(greaterThanOrEqualToConstant: 180).isActive = true
@@ -104,7 +130,10 @@ extension PlanningViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let index = indexPath.item
         
-        NSLog("Selected item: \(titles[index])")
+        NSLog("Selected item: \(data[index])")
+        self.dateLabel.text = data[index].dia
+        
+        
     }
 }
 
@@ -115,17 +144,18 @@ extension PlanningViewController: UICollectionViewDataSource {
     }
     
     public func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return titles.count
+        return data.count
     }
     
     public func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: NSStringFromClass(CollectionPickerViewCell.self), for: indexPath) as! CollectionPickerViewCell
-        let title = titles[indexPath.item]
+        let title = data[indexPath.item].diaLetra
         
         cell.label.text = title
         cell.label.font = font
         cell.font = font
         cell.highlightedFont = highlightedFont
+        
         
         return cell
     }
@@ -136,6 +166,7 @@ private class CollectionPickerViewCell: UICollectionViewCell {
     var label: UILabel!
     var imageView: UIImageView!
     var spon: UIImageView!
+    var sponSelected: UIImageView!
     var labelTeste: UILabel!
     var font = UIFont.systemFont(ofSize: UIFont.systemFontSize)
     var highlightedFont = UIFont.systemFont(ofSize: UIFont.systemFontSize)
@@ -143,9 +174,12 @@ private class CollectionPickerViewCell: UICollectionViewCell {
         didSet {
             let animation = CATransition()
             animation.type = CATransitionType.fade
-            animation.duration = 0.15
-            self.label.layer.add(animation, forKey: "")
-            self.label.font = self.isSelected ? self.highlightedFont : self.font
+            animation.duration = 0.1
+            //self.label.layer.add(animation, forKey: "")
+            //self.label.font = self.isSelected ? self.highlightedFont : self.font
+            self.spon.layer.add(animation, forKey: "")
+            self.spon.image = self.isSelected ?
+                self.sponSelected.image?.resizeImage(targetSize: CGSize(width: 70, height: 70)) : self.sponSelected.image
         }
     }
     
@@ -179,12 +213,21 @@ private class CollectionPickerViewCell: UICollectionViewCell {
         
         
         self.spon = UIImageView()
-        self.spon.image = UIImage(named: "0Spoon")
+        self.spon.image = UIImage(named: "2Spoon")
         self.spon.translatesAutoresizingMaskIntoConstraints = false
         self.spon.center = label.center
         self.spon.backgroundColor = UIColor.clear
        self.spon.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         self.contentView.addSubview(self.spon)
+        
+        
+        self.sponSelected = UIImageView()
+        self.sponSelected.image = UIImage(named: "2Spoon")
+        self.sponSelected.translatesAutoresizingMaskIntoConstraints = false
+        self.sponSelected.center = label.center
+        self.sponSelected.backgroundColor = UIColor.clear
+       self.sponSelected.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+        sponSelected.image = sponSelected.image?.resizeImage(targetSize: CGSize(width: 50, height: 50))
 
         spon.centerXAnchor.constraint(equalTo: contentView.centerXAnchor, constant: 0).isActive = true
         spon.topAnchor.constraint(equalTo: label.bottomAnchor, constant: 10).isActive = true

@@ -26,6 +26,8 @@
 		9133BDDB269BEE6F005F8489 /* SF-Pro-Rounded-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9133BDD2269BEE6F005F8489 /* SF-Pro-Rounded-Bold.otf */; };
 		9133BDDC269BEE6F005F8489 /* SF-Pro-Rounded-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9133BDD3269BEE6F005F8489 /* SF-Pro-Rounded-Semibold.otf */; };
 		9133BDDD269BEE6F005F8489 /* SF-Pro-Rounded-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9133BDD4269BEE6F005F8489 /* SF-Pro-Rounded-Light.otf */; };
+		9133BDEB269BF603005F8489 /* DiaUiModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9133BDEA269BF603005F8489 /* DiaUiModel.swift */; };
+		9133BDEE269BFFDA005F8489 /* PlanCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9133BDED269BFFDA005F8489 /* PlanCollectionViewCell.swift */; };
 		913D1CBD269A103800A51245 /* PlanningViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913D1CBC269A103800A51245 /* PlanningViewController.swift */; };
 		913D1CFB269A4B3F00A51245 /* DateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913D1CFA269A4B3F00A51245 /* DateModel.swift */; };
 		913D1D03269A7FE800A51245 /* PlanningDateModelViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913D1D02269A7FE800A51245 /* PlanningDateModelViewModel.swift */; };
@@ -67,6 +69,8 @@
 		9133BDD2269BEE6F005F8489 /* SF-Pro-Rounded-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Pro-Rounded-Bold.otf"; path = "../../../../../Downloads/SF Pro Rounded/SF-Pro-Rounded-Bold.otf"; sourceTree = "<group>"; };
 		9133BDD3269BEE6F005F8489 /* SF-Pro-Rounded-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Pro-Rounded-Semibold.otf"; path = "../../../../../Downloads/SF Pro Rounded/SF-Pro-Rounded-Semibold.otf"; sourceTree = "<group>"; };
 		9133BDD4269BEE6F005F8489 /* SF-Pro-Rounded-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Pro-Rounded-Light.otf"; path = "../../../../../Downloads/SF Pro Rounded/SF-Pro-Rounded-Light.otf"; sourceTree = "<group>"; };
+		9133BDEA269BF603005F8489 /* DiaUiModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaUiModel.swift; sourceTree = "<group>"; };
+		9133BDED269BFFDA005F8489 /* PlanCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanCollectionViewCell.swift; sourceTree = "<group>"; };
 		913D1CBC269A103800A51245 /* PlanningViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanningViewController.swift; sourceTree = "<group>"; };
 		913D1CFA269A4B3F00A51245 /* DateModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateModel.swift; sourceTree = "<group>"; };
 		913D1D02269A7FE800A51245 /* PlanningDateModelViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanningDateModelViewModel.swift; sourceTree = "<group>"; };
@@ -177,6 +181,8 @@
 			isa = PBXGroup;
 			children = (
 				913D1CFA269A4B3F00A51245 /* DateModel.swift */,
+				9133BDEA269BF603005F8489 /* DiaUiModel.swift */,
+				9133BDED269BFFDA005F8489 /* PlanCollectionViewCell.swift */,
 			);
 			path = UIModel;
 			sourceTree = "<group>";
@@ -442,11 +448,13 @@
 				DBF62FCA2695FA2A002461D3 /* NotificationRepository.swift in Sources */,
 				913D1CBD269A103800A51245 /* PlanningViewController.swift in Sources */,
 				5F6A60DB2689F9EA00F95162 /* ViewController.swift in Sources */,
+				9133BDEE269BFFDA005F8489 /* PlanCollectionViewCell.swift in Sources */,
 				5F90ABB3268DF8CF00276FD6 /* DesignableUITextField.swift in Sources */,
 				5F92C8E42693F6E80095F92C /* RecipeViewController.swift in Sources */,
 				913D1CFB269A4B3F00A51245 /* DateModel.swift in Sources */,
 				5F92C8E226933E920095F92C /* MyCollectionViewCell.swift in Sources */,
 				5F6A60D72689F9EA00F95162 /* AppDelegate.swift in Sources */,
+				9133BDEB269BF603005F8489 /* DiaUiModel.swift in Sources */,
 				DBFFF72F2694A99C00F6D59B /* NotificationsUIModel.swift in Sources */,
 				5F6A60D92689F9EA00F95162 /* SceneDelegate.swift in Sources */,
 				DBB1457B268F43DA0058BDE4 /* ShoppingListAddItemViewController.swift in Sources */,
