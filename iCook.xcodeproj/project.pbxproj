@@ -17,40 +17,37 @@
 		5F92C8E0269331010095F92C /* RecipeListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F92C8DF269331010095F92C /* RecipeListViewController.swift */; };
 		5F92C8E226933E920095F92C /* MyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F92C8E126933E910095F92C /* MyCollectionViewCell.swift */; };
 		5F92C8E42693F6E80095F92C /* RecipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F92C8E32693F6E80095F92C /* RecipeViewController.swift */; };
-		9133BDD5269BEE6F005F8489 /* SF-Pro-Rounded-Heavy.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9133BDCC269BEE6F005F8489 /* SF-Pro-Rounded-Heavy.otf */; };
-		9133BDD6269BEE6F005F8489 /* SF-Pro-Rounded-Ultralight.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9133BDCD269BEE6F005F8489 /* SF-Pro-Rounded-Ultralight.otf */; };
-		9133BDD7269BEE6F005F8489 /* SF-Pro-Rounded-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9133BDCE269BEE6F005F8489 /* SF-Pro-Rounded-Thin.otf */; };
-		9133BDD8269BEE6F005F8489 /* SF-Pro-Rounded-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9133BDCF269BEE6F005F8489 /* SF-Pro-Rounded-Black.otf */; };
-		9133BDD9269BEE6F005F8489 /* SF-Pro-Rounded-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9133BDD0269BEE6F005F8489 /* SF-Pro-Rounded-Regular.otf */; };
-		9133BDDA269BEE6F005F8489 /* SF-Pro-Rounded-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9133BDD1269BEE6F005F8489 /* SF-Pro-Rounded-Medium.otf */; };
-		9133BDDB269BEE6F005F8489 /* SF-Pro-Rounded-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9133BDD2269BEE6F005F8489 /* SF-Pro-Rounded-Bold.otf */; };
-		9133BDDC269BEE6F005F8489 /* SF-Pro-Rounded-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9133BDD3269BEE6F005F8489 /* SF-Pro-Rounded-Semibold.otf */; };
-		9133BDDD269BEE6F005F8489 /* SF-Pro-Rounded-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9133BDD4269BEE6F005F8489 /* SF-Pro-Rounded-Light.otf */; };
-		9133BDEB269BF603005F8489 /* DiaUiModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9133BDEA269BF603005F8489 /* DiaUiModel.swift */; };
-		9133BDEE269BFFDA005F8489 /* PlanCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9133BDED269BFFDA005F8489 /* PlanCollectionViewCell.swift */; };
-		913D1CBD269A103800A51245 /* PlanningViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913D1CBC269A103800A51245 /* PlanningViewController.swift */; };
-		913D1CFB269A4B3F00A51245 /* DateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913D1CFA269A4B3F00A51245 /* DateModel.swift */; };
-		913D1D03269A7FE800A51245 /* PlanningDateModelViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913D1D02269A7FE800A51245 /* PlanningDateModelViewModel.swift */; };
+		5FFEE5E0269D0D4500A1192F /* PlanningDateViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFEE5B2269D0D4500A1192F /* PlanningDateViewModel.swift */; };
+		5FFEE5E1269D0D4500A1192F /* PlanningDateModelViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFEE5B3269D0D4500A1192F /* PlanningDateModelViewModel.swift */; };
+		5FFEE5E2269D0D4500A1192F /* PlanCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFEE5B5269D0D4500A1192F /* PlanCollectionViewCell.swift */; };
+		5FFEE5E3269D0D4500A1192F /* PlanningCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFEE5B6269D0D4500A1192F /* PlanningCellModel.swift */; };
+		5FFEE5E4269D0D4500A1192F /* PlanningCellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFEE5B7269D0D4500A1192F /* PlanningCellViewController.swift */; };
+		5FFEE5E5269D0D4500A1192F /* DateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFEE5B8269D0D4500A1192F /* DateModel.swift */; };
+		5FFEE5E6269D0D4500A1192F /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFEE5B9269D0D4500A1192F /* File.swift */; };
+		5FFEE5E7269D0D4500A1192F /* DiaUiModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFEE5BA269D0D4500A1192F /* DiaUiModel.swift */; };
+		5FFEE5E8269D0D4500A1192F /* PlanningCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFEE5BB269D0D4500A1192F /* PlanningCollectionView.swift */; };
+		5FFEE5E9269D0D4500A1192F /* PlanningScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFEE5BD269D0D4500A1192F /* PlanningScreenViewController.swift */; };
+		5FFEE5EA269D0D4500A1192F /* PlanningViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFEE5BE269D0D4500A1192F /* PlanningViewController.swift */; };
+		5FFEE5EB269D0D4500A1192F /* ShoppingListAddItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFEE5C1269D0D4500A1192F /* ShoppingListAddItemViewModel.swift */; };
+		5FFEE5EC269D0D4500A1192F /* ShoppingListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFEE5C2269D0D4500A1192F /* ShoppingListViewModel.swift */; };
+		5FFEE5ED269D0D4500A1192F /* ShoppingListItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFEE5C5269D0D4500A1192F /* ShoppingListItemCell.swift */; };
+		5FFEE5EE269D0D4500A1192F /* PaddingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFEE5C6269D0D4500A1192F /* PaddingLabel.swift */; };
+		5FFEE5EF269D0D4500A1192F /* RadioButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFEE5C7269D0D4500A1192F /* RadioButton.swift */; };
+		5FFEE5F0269D0D4500A1192F /* ShoppingListAddItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFEE5C9269D0D4500A1192F /* ShoppingListAddItemViewController.swift */; };
+		5FFEE5F1269D0D4500A1192F /* ShoppingListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFEE5CA269D0D4500A1192F /* ShoppingListViewController.swift */; };
+		5FFEE5F2269D0D4500A1192F /* ShoppingListItemUIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFEE5CC269D0D4500A1192F /* ShoppingListItemUIModel.swift */; };
+		5FFEE5F3269D0D4500A1192F /* NotificationsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFEE5CF269D0D4500A1192F /* NotificationsViewModel.swift */; };
+		5FFEE5F4269D0D4500A1192F /* NotificationSoundTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFEE5D2269D0D4500A1192F /* NotificationSoundTableViewCell.swift */; };
+		5FFEE5F5269D0D4500A1192F /* NotificationTimeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFEE5D3269D0D4500A1192F /* NotificationTimeTableViewCell.swift */; };
+		5FFEE5F6269D0D4500A1192F /* NotificationLabelCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFEE5D4269D0D4500A1192F /* NotificationLabelCellTableViewCell.swift */; };
+		5FFEE5F8269D0D4500A1192F /* NotificationDisclaimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFEE5D7269D0D4500A1192F /* NotificationDisclaimerViewController.swift */; };
+		5FFEE5F9269D0D4500A1192F /* NotificationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFEE5D8269D0D4500A1192F /* NotificationsViewController.swift */; };
+		5FFEE5FB269D0D4500A1192F /* NotificationsUIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFEE5DB269D0D4500A1192F /* NotificationsUIModel.swift */; };
+		5FFEE5FC269D0D4500A1192F /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFEE5DF269D0D4500A1192F /* OnboardingViewController.swift */; };
 		A482E6E7FEE842EE78C13E09 /* Pods_iCook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0D9C37DA4DC1746741B2F3E /* Pods_iCook.framework */; };
-		DB0ACF21268DEEA300D735C8 /* ShoppingListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0ACF20268DEEA300D735C8 /* ShoppingListViewModel.swift */; };
-		DB0ACF2A268DF89200D735C8 /* ShoppingListItemUIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0ACF29268DF89200D735C8 /* ShoppingListItemUIModel.swift */; };
-		DB0ACF2C268E006700D735C8 /* RadioButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0ACF2B268E006700D735C8 /* RadioButton.swift */; };
-		DB0ACF2E268E029500D735C8 /* ShoppingListItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0ACF2D268E029500D735C8 /* ShoppingListItemCell.swift */; };
-		DB0F299A26974DD300B46AEB /* NotificationLabelCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0F299926974DD300B46AEB /* NotificationLabelCellTableViewCell.swift */; };
 		DBAACAF6269C99DC009C5925 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBAACAF5269C99DC009C5925 /* TabBarController.swift */; };
 		DBAACAF9269CC320009C5925 /* UserPreferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBAACAF8269CC320009C5925 /* UserPreferences.swift */; };
-		DBAACAFE269CC7D1009C5925 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBAACAFD269CC7D1009C5925 /* OnboardingViewController.swift */; };
-		DBB1457B268F43DA0058BDE4 /* ShoppingListAddItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB14579268F43DA0058BDE4 /* ShoppingListAddItemViewController.swift */; };
-		DBB1457E268F5C050058BDE4 /* ShoppingListAddItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB1457D268F5C050058BDE4 /* ShoppingListAddItemViewModel.swift */; };
-		DBE27AF32699FAC5004564A8 /* NotificationSoundTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE27AF22699FAC5004564A8 /* NotificationSoundTableViewCell.swift */; };
-		DBE27AF5269A2284004564A8 /* NotificationTimeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE27AF4269A2284004564A8 /* NotificationTimeTableViewCell.swift */; };
 		DBF62FCA2695FA2A002461D3 /* NotificationRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF62FC92695FA2A002461D3 /* NotificationRepository.swift */; };
-		DBF62FCC269600E4002461D3 /* NotificationDisclaimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF62FCB269600E4002461D3 /* NotificationDisclaimerViewController.swift */; };
-		DBF76CA8268CBEBE009E5063 /* ShoppingListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF76CA7268CBEBE009E5063 /* ShoppingListViewController.swift */; };
-		DBFFF72526933E7100F6D59B /* PaddingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBFFF72426933E7100F6D59B /* PaddingLabel.swift */; };
-		DBFFF72B2694A92B00F6D59B /* NotificationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBFFF72A2694A92B00F6D59B /* NotificationsViewController.swift */; };
-		DBFFF72D2694A96D00F6D59B /* NotificationsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBFFF72C2694A96D00F6D59B /* NotificationsViewModel.swift */; };
-		DBFFF72F2694A99C00F6D59B /* NotificationsUIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBFFF72E2694A99C00F6D59B /* NotificationsUIModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,42 +63,48 @@
 		5F92C8DF269331010095F92C /* RecipeListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeListViewController.swift; sourceTree = "<group>"; };
 		5F92C8E126933E910095F92C /* MyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCollectionViewCell.swift; sourceTree = "<group>"; };
 		5F92C8E32693F6E80095F92C /* RecipeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeViewController.swift; sourceTree = "<group>"; };
-		9133BDCC269BEE6F005F8489 /* SF-Pro-Rounded-Heavy.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Pro-Rounded-Heavy.otf"; path = "../../../../../Downloads/SF Pro Rounded/SF-Pro-Rounded-Heavy.otf"; sourceTree = "<group>"; };
-		9133BDCD269BEE6F005F8489 /* SF-Pro-Rounded-Ultralight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Pro-Rounded-Ultralight.otf"; path = "../../../../../Downloads/SF Pro Rounded/SF-Pro-Rounded-Ultralight.otf"; sourceTree = "<group>"; };
-		9133BDCE269BEE6F005F8489 /* SF-Pro-Rounded-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Pro-Rounded-Thin.otf"; path = "../../../../../Downloads/SF Pro Rounded/SF-Pro-Rounded-Thin.otf"; sourceTree = "<group>"; };
-		9133BDCF269BEE6F005F8489 /* SF-Pro-Rounded-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Pro-Rounded-Black.otf"; path = "../../../../../Downloads/SF Pro Rounded/SF-Pro-Rounded-Black.otf"; sourceTree = "<group>"; };
-		9133BDD0269BEE6F005F8489 /* SF-Pro-Rounded-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Pro-Rounded-Regular.otf"; path = "../../../../../Downloads/SF Pro Rounded/SF-Pro-Rounded-Regular.otf"; sourceTree = "<group>"; };
-		9133BDD1269BEE6F005F8489 /* SF-Pro-Rounded-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Pro-Rounded-Medium.otf"; path = "../../../../../Downloads/SF Pro Rounded/SF-Pro-Rounded-Medium.otf"; sourceTree = "<group>"; };
-		9133BDD2269BEE6F005F8489 /* SF-Pro-Rounded-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Pro-Rounded-Bold.otf"; path = "../../../../../Downloads/SF Pro Rounded/SF-Pro-Rounded-Bold.otf"; sourceTree = "<group>"; };
-		9133BDD3269BEE6F005F8489 /* SF-Pro-Rounded-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Pro-Rounded-Semibold.otf"; path = "../../../../../Downloads/SF Pro Rounded/SF-Pro-Rounded-Semibold.otf"; sourceTree = "<group>"; };
-		9133BDD4269BEE6F005F8489 /* SF-Pro-Rounded-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Pro-Rounded-Light.otf"; path = "../../../../../Downloads/SF Pro Rounded/SF-Pro-Rounded-Light.otf"; sourceTree = "<group>"; };
-		9133BDEA269BF603005F8489 /* DiaUiModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaUiModel.swift; sourceTree = "<group>"; };
-		9133BDED269BFFDA005F8489 /* PlanCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanCollectionViewCell.swift; sourceTree = "<group>"; };
-		913D1CBC269A103800A51245 /* PlanningViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanningViewController.swift; sourceTree = "<group>"; };
-		913D1CFA269A4B3F00A51245 /* DateModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateModel.swift; sourceTree = "<group>"; };
-		913D1D02269A7FE800A51245 /* PlanningDateModelViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanningDateModelViewModel.swift; sourceTree = "<group>"; };
+		5FFEE5A2269D0CE700A1192F /* SF-Pro-Rounded-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Rounded-Semibold.otf"; sourceTree = "<group>"; };
+		5FFEE5A3269D0CE800A1192F /* SF-Pro-Rounded-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Rounded-Medium.otf"; sourceTree = "<group>"; };
+		5FFEE5A4269D0CE800A1192F /* SF-Pro-Rounded-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Rounded-Regular.otf"; sourceTree = "<group>"; };
+		5FFEE5A5269D0CE800A1192F /* SF-Pro-Rounded-Heavy.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Rounded-Heavy.otf"; sourceTree = "<group>"; };
+		5FFEE5A6269D0CE900A1192F /* SF-Pro-Rounded-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Rounded-Thin.otf"; sourceTree = "<group>"; };
+		5FFEE5A7269D0CE900A1192F /* SF-Pro-Rounded-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Rounded-Light.otf"; sourceTree = "<group>"; };
+		5FFEE5A8269D0CE900A1192F /* SF-Pro-Rounded-Ultralight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Rounded-Ultralight.otf"; sourceTree = "<group>"; };
+		5FFEE5A9269D0CEA00A1192F /* SF-Pro-Rounded-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Rounded-Bold.otf"; sourceTree = "<group>"; };
+		5FFEE5AA269D0CEA00A1192F /* SF-Pro-Rounded-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Rounded-Black.otf"; sourceTree = "<group>"; };
+		5FFEE5B2269D0D4500A1192F /* PlanningDateViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlanningDateViewModel.swift; sourceTree = "<group>"; };
+		5FFEE5B3269D0D4500A1192F /* PlanningDateModelViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlanningDateModelViewModel.swift; sourceTree = "<group>"; };
+		5FFEE5B5269D0D4500A1192F /* PlanCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlanCollectionViewCell.swift; sourceTree = "<group>"; };
+		5FFEE5B6269D0D4500A1192F /* PlanningCellModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlanningCellModel.swift; sourceTree = "<group>"; };
+		5FFEE5B7269D0D4500A1192F /* PlanningCellViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlanningCellViewController.swift; sourceTree = "<group>"; };
+		5FFEE5B8269D0D4500A1192F /* DateModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateModel.swift; sourceTree = "<group>"; };
+		5FFEE5B9269D0D4500A1192F /* File.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		5FFEE5BA269D0D4500A1192F /* DiaUiModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiaUiModel.swift; sourceTree = "<group>"; };
+		5FFEE5BB269D0D4500A1192F /* PlanningCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlanningCollectionView.swift; sourceTree = "<group>"; };
+		5FFEE5BD269D0D4500A1192F /* PlanningScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlanningScreenViewController.swift; sourceTree = "<group>"; };
+		5FFEE5BE269D0D4500A1192F /* PlanningViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlanningViewController.swift; sourceTree = "<group>"; };
+		5FFEE5C1269D0D4500A1192F /* ShoppingListAddItemViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShoppingListAddItemViewModel.swift; sourceTree = "<group>"; };
+		5FFEE5C2269D0D4500A1192F /* ShoppingListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShoppingListViewModel.swift; sourceTree = "<group>"; };
+		5FFEE5C5269D0D4500A1192F /* ShoppingListItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShoppingListItemCell.swift; sourceTree = "<group>"; };
+		5FFEE5C6269D0D4500A1192F /* PaddingLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaddingLabel.swift; sourceTree = "<group>"; };
+		5FFEE5C7269D0D4500A1192F /* RadioButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RadioButton.swift; sourceTree = "<group>"; };
+		5FFEE5C9269D0D4500A1192F /* ShoppingListAddItemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShoppingListAddItemViewController.swift; sourceTree = "<group>"; };
+		5FFEE5CA269D0D4500A1192F /* ShoppingListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShoppingListViewController.swift; sourceTree = "<group>"; };
+		5FFEE5CC269D0D4500A1192F /* ShoppingListItemUIModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShoppingListItemUIModel.swift; sourceTree = "<group>"; };
+		5FFEE5CF269D0D4500A1192F /* NotificationsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationsViewModel.swift; sourceTree = "<group>"; };
+		5FFEE5D2269D0D4500A1192F /* NotificationSoundTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationSoundTableViewCell.swift; sourceTree = "<group>"; };
+		5FFEE5D3269D0D4500A1192F /* NotificationTimeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationTimeTableViewCell.swift; sourceTree = "<group>"; };
+		5FFEE5D4269D0D4500A1192F /* NotificationLabelCellTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationLabelCellTableViewCell.swift; sourceTree = "<group>"; };
+		5FFEE5D7269D0D4500A1192F /* NotificationDisclaimerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationDisclaimerViewController.swift; sourceTree = "<group>"; };
+		5FFEE5D8269D0D4500A1192F /* NotificationsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationsViewController.swift; sourceTree = "<group>"; };
+		5FFEE5DB269D0D4500A1192F /* NotificationsUIModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationsUIModel.swift; sourceTree = "<group>"; };
+		5FFEE5DF269D0D4500A1192F /* OnboardingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OnboardingViewController.swift; path = Screens/Onboarding/View/ViewController/OnboardingViewController.swift; sourceTree = "<group>"; };
 		A0D9C37DA4DC1746741B2F3E /* Pods_iCook.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iCook.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B08D44095E22F263EF03A38C /* Pods-iCook.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iCook.debug.xcconfig"; path = "Target Support Files/Pods-iCook/Pods-iCook.debug.xcconfig"; sourceTree = "<group>"; };
 		C50C345C15F1CCC81A617293 /* Pods-iCook.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iCook.release.xcconfig"; path = "Target Support Files/Pods-iCook/Pods-iCook.release.xcconfig"; sourceTree = "<group>"; };
-		DB0ACF20268DEEA300D735C8 /* ShoppingListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingListViewModel.swift; sourceTree = "<group>"; };
-		DB0ACF29268DF89200D735C8 /* ShoppingListItemUIModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingListItemUIModel.swift; sourceTree = "<group>"; };
-		DB0ACF2B268E006700D735C8 /* RadioButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioButton.swift; sourceTree = "<group>"; };
-		DB0ACF2D268E029500D735C8 /* ShoppingListItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingListItemCell.swift; sourceTree = "<group>"; };
-		DB0F299926974DD300B46AEB /* NotificationLabelCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationLabelCellTableViewCell.swift; sourceTree = "<group>"; };
 		DBAACAF5269C99DC009C5925 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		DBAACAF8269CC320009C5925 /* UserPreferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPreferences.swift; sourceTree = "<group>"; };
-		DBAACAFD269CC7D1009C5925 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
-		DBB14579268F43DA0058BDE4 /* ShoppingListAddItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingListAddItemViewController.swift; sourceTree = "<group>"; };
-		DBB1457D268F5C050058BDE4 /* ShoppingListAddItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingListAddItemViewModel.swift; sourceTree = "<group>"; };
-		DBE27AF22699FAC5004564A8 /* NotificationSoundTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationSoundTableViewCell.swift; sourceTree = "<group>"; };
-		DBE27AF4269A2284004564A8 /* NotificationTimeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationTimeTableViewCell.swift; sourceTree = "<group>"; };
 		DBF62FC92695FA2A002461D3 /* NotificationRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationRepository.swift; sourceTree = "<group>"; };
-		DBF62FCB269600E4002461D3 /* NotificationDisclaimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationDisclaimerViewController.swift; sourceTree = "<group>"; };
-		DBF76CA7268CBEBE009E5063 /* ShoppingListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingListViewController.swift; sourceTree = "<group>"; };
-		DBFFF72426933E7100F6D59B /* PaddingLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaddingLabel.swift; sourceTree = "<group>"; };
-		DBFFF72A2694A92B00F6D59B /* NotificationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsViewController.swift; sourceTree = "<group>"; };
-		DBFFF72C2694A96D00F6D59B /* NotificationsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsViewModel.swift; sourceTree = "<group>"; };
-		DBFFF72E2694A99C00F6D59B /* NotificationsUIModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsUIModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +134,7 @@
 				5F6A60D42689F9EA00F95162 /* Products */,
 				DA9AE2C3BA32D9FF3AACFE6C /* Pods */,
 				53EB88D9550D5D608465B737 /* Frameworks */,
+				5FFEE5A1269D0CB600A1192F /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -145,9 +149,10 @@
 		5F6A60D52689F9EA00F95162 /* iCook */ = {
 			isa = PBXGroup;
 			children = (
+				5FFEE5DF269D0D4500A1192F /* OnboardingViewController.swift */,
+				5FFEE5AF269D0D4500A1192F /* Screens */,
 				913D1CD7269A30B500A51245 /* fonts */,
 				DBF62FC82695F979002461D3 /* Repositories */,
-				DB0ACF22268DEF0700D735C8 /* Screens */,
 				5F6A60D62689F9EA00F95162 /* AppDelegate.swift */,
 				5F6A60D82689F9EA00F95162 /* SceneDelegate.swift */,
 				5F6A60DA2689F9EA00F95162 /* ViewController.swift */,
@@ -165,56 +170,212 @@
 			path = iCook;
 			sourceTree = "<group>";
 		};
-		913D1CBB269A100E00A51245 /* Planning */ = {
+		5FFEE5A1269D0CB600A1192F /* Recovered References */ = {
 			isa = PBXGroup;
 			children = (
-				913D1D05269A849500A51245 /* ViewController */,
-				913D1CFD269A7DA400A51245 /* ViewModel */,
-				913D1CF5269A496400A51245 /* UIModel */,
+			);
+			name = "Recovered References";
+			sourceTree = "<group>";
+		};
+		5FFEE5AF269D0D4500A1192F /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				5FFEE5B0269D0D4500A1192F /* Planning */,
+				5FFEE5BF269D0D4500A1192F /* ShoppingList */,
+				5FFEE5CD269D0D4500A1192F /* Notifications */,
+				5FFEE5DC269D0D4500A1192F /* Onboarding */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		5FFEE5B0269D0D4500A1192F /* Planning */ = {
+			isa = PBXGroup;
+			children = (
+				5FFEE5B1269D0D4500A1192F /* ViewModel */,
+				5FFEE5B4269D0D4500A1192F /* UIModel */,
+				5FFEE5BC269D0D4500A1192F /* ViewController */,
 			);
 			path = Planning;
+			sourceTree = "<group>";
+		};
+		5FFEE5B1269D0D4500A1192F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				5FFEE5B2269D0D4500A1192F /* PlanningDateViewModel.swift */,
+				5FFEE5B3269D0D4500A1192F /* PlanningDateModelViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		5FFEE5B4269D0D4500A1192F /* UIModel */ = {
+			isa = PBXGroup;
+			children = (
+				5FFEE5B5269D0D4500A1192F /* PlanCollectionViewCell.swift */,
+				5FFEE5B6269D0D4500A1192F /* PlanningCellModel.swift */,
+				5FFEE5B7269D0D4500A1192F /* PlanningCellViewController.swift */,
+				5FFEE5B8269D0D4500A1192F /* DateModel.swift */,
+				5FFEE5B9269D0D4500A1192F /* File.swift */,
+				5FFEE5BA269D0D4500A1192F /* DiaUiModel.swift */,
+				5FFEE5BB269D0D4500A1192F /* PlanningCollectionView.swift */,
+			);
+			path = UIModel;
+			sourceTree = "<group>";
+		};
+		5FFEE5BC269D0D4500A1192F /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				5FFEE5BD269D0D4500A1192F /* PlanningScreenViewController.swift */,
+				5FFEE5BE269D0D4500A1192F /* PlanningViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		5FFEE5BF269D0D4500A1192F /* ShoppingList */ = {
+			isa = PBXGroup;
+			children = (
+				5FFEE5C0269D0D4500A1192F /* ViewModel */,
+				5FFEE5C3269D0D4500A1192F /* View */,
+				5FFEE5CB269D0D4500A1192F /* UIModel */,
+			);
+			path = ShoppingList;
+			sourceTree = "<group>";
+		};
+		5FFEE5C0269D0D4500A1192F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				5FFEE5C1269D0D4500A1192F /* ShoppingListAddItemViewModel.swift */,
+				5FFEE5C2269D0D4500A1192F /* ShoppingListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		5FFEE5C3269D0D4500A1192F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5FFEE5C4269D0D4500A1192F /* Cell */,
+				5FFEE5C6269D0D4500A1192F /* PaddingLabel.swift */,
+				5FFEE5C7269D0D4500A1192F /* RadioButton.swift */,
+				5FFEE5C8269D0D4500A1192F /* ViewController */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5FFEE5C4269D0D4500A1192F /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				5FFEE5C5269D0D4500A1192F /* ShoppingListItemCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		5FFEE5C8269D0D4500A1192F /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				5FFEE5C9269D0D4500A1192F /* ShoppingListAddItemViewController.swift */,
+				5FFEE5CA269D0D4500A1192F /* ShoppingListViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		5FFEE5CB269D0D4500A1192F /* UIModel */ = {
+			isa = PBXGroup;
+			children = (
+				5FFEE5CC269D0D4500A1192F /* ShoppingListItemUIModel.swift */,
+			);
+			path = UIModel;
+			sourceTree = "<group>";
+		};
+		5FFEE5CD269D0D4500A1192F /* Notifications */ = {
+			isa = PBXGroup;
+			children = (
+				5FFEE5CE269D0D4500A1192F /* ViewModel */,
+				5FFEE5D0269D0D4500A1192F /* View */,
+				5FFEE5DA269D0D4500A1192F /* UIModel */,
+			);
+			path = Notifications;
+			sourceTree = "<group>";
+		};
+		5FFEE5CE269D0D4500A1192F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				5FFEE5CF269D0D4500A1192F /* NotificationsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		5FFEE5D0269D0D4500A1192F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5FFEE5D1269D0D4500A1192F /* Cell */,
+				5FFEE5D6269D0D4500A1192F /* ViewController */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5FFEE5D1269D0D4500A1192F /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				5FFEE5D2269D0D4500A1192F /* NotificationSoundTableViewCell.swift */,
+				5FFEE5D3269D0D4500A1192F /* NotificationTimeTableViewCell.swift */,
+				5FFEE5D4269D0D4500A1192F /* NotificationLabelCellTableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		5FFEE5D6269D0D4500A1192F /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				5FFEE5D7269D0D4500A1192F /* NotificationDisclaimerViewController.swift */,
+				5FFEE5D8269D0D4500A1192F /* NotificationsViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		5FFEE5DA269D0D4500A1192F /* UIModel */ = {
+			isa = PBXGroup;
+			children = (
+				5FFEE5DB269D0D4500A1192F /* NotificationsUIModel.swift */,
+			);
+			path = UIModel;
+			sourceTree = "<group>";
+		};
+		5FFEE5DC269D0D4500A1192F /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				5FFEE5DD269D0D4500A1192F /* View */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		5FFEE5DD269D0D4500A1192F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5FFEE5DE269D0D4500A1192F /* ViewController */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5FFEE5DE269D0D4500A1192F /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 		913D1CD7269A30B500A51245 /* fonts */ = {
 			isa = PBXGroup;
 			children = (
-				9133BDCF269BEE6F005F8489 /* SF-Pro-Rounded-Black.otf */,
-				9133BDD2269BEE6F005F8489 /* SF-Pro-Rounded-Bold.otf */,
-				9133BDCC269BEE6F005F8489 /* SF-Pro-Rounded-Heavy.otf */,
-				9133BDD4269BEE6F005F8489 /* SF-Pro-Rounded-Light.otf */,
-				9133BDD1269BEE6F005F8489 /* SF-Pro-Rounded-Medium.otf */,
-				9133BDD0269BEE6F005F8489 /* SF-Pro-Rounded-Regular.otf */,
-				9133BDD3269BEE6F005F8489 /* SF-Pro-Rounded-Semibold.otf */,
-				9133BDCE269BEE6F005F8489 /* SF-Pro-Rounded-Thin.otf */,
-				9133BDCD269BEE6F005F8489 /* SF-Pro-Rounded-Ultralight.otf */,
+				5FFEE5AA269D0CEA00A1192F /* SF-Pro-Rounded-Black.otf */,
+				5FFEE5A9269D0CEA00A1192F /* SF-Pro-Rounded-Bold.otf */,
+				5FFEE5A5269D0CE800A1192F /* SF-Pro-Rounded-Heavy.otf */,
+				5FFEE5A7269D0CE900A1192F /* SF-Pro-Rounded-Light.otf */,
+				5FFEE5A3269D0CE800A1192F /* SF-Pro-Rounded-Medium.otf */,
+				5FFEE5A4269D0CE800A1192F /* SF-Pro-Rounded-Regular.otf */,
+				5FFEE5A2269D0CE700A1192F /* SF-Pro-Rounded-Semibold.otf */,
+				5FFEE5A6269D0CE900A1192F /* SF-Pro-Rounded-Thin.otf */,
+				5FFEE5A8269D0CE900A1192F /* SF-Pro-Rounded-Ultralight.otf */,
 			);
 			path = fonts;
-			sourceTree = "<group>";
-		};
-		913D1CF5269A496400A51245 /* UIModel */ = {
-			isa = PBXGroup;
-			children = (
-				913D1CFA269A4B3F00A51245 /* DateModel.swift */,
-				9133BDEA269BF603005F8489 /* DiaUiModel.swift */,
-				9133BDED269BFFDA005F8489 /* PlanCollectionViewCell.swift */,
-			);
-			path = UIModel;
-			sourceTree = "<group>";
-		};
-		913D1CFD269A7DA400A51245 /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-				913D1D02269A7FE800A51245 /* PlanningDateModelViewModel.swift */,
-			);
-			path = ViewModel;
-			sourceTree = "<group>";
-		};
-		913D1D05269A849500A51245 /* ViewController */ = {
-			isa = PBXGroup;
-			children = (
-				913D1CBC269A103800A51245 /* PlanningViewController.swift */,
-			);
-			path = ViewController;
 			sourceTree = "<group>";
 		};
 		DA9AE2C3BA32D9FF3AACFE6C /* Pods */ = {
@@ -226,155 +387,12 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		DB0ACF22268DEF0700D735C8 /* Screens */ = {
-			isa = PBXGroup;
-			children = (
-				913D1CBB269A100E00A51245 /* Planning */,
-				DBFFF726269499DE00F6D59B /* Notifications */,
-				DB0ACF23268DEF0F00D735C8 /* ShoppingList */,
-			);
-			path = Screens;
-			sourceTree = "<group>";
-		};
-		DB0ACF23268DEF0F00D735C8 /* ShoppingList */ = {
-			isa = PBXGroup;
-			children = (
-				DB0ACF28268DF88000D735C8 /* UIModel */,
-				DB0ACF25268DEF3400D735C8 /* ViewModel */,
-				DB0ACF24268DEF2400D735C8 /* View */,
-			);
-			path = ShoppingList;
-			sourceTree = "<group>";
-		};
-		DB0ACF24268DEF2400D735C8 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				DB0ACF26268DF10100D735C8 /* Cell */,
-				DB0ACF27268DF10E00D735C8 /* ViewController */,
-				DB0ACF2B268E006700D735C8 /* RadioButton.swift */,
-				DBFFF72426933E7100F6D59B /* PaddingLabel.swift */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		DB0ACF25268DEF3400D735C8 /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-				DB0ACF20268DEEA300D735C8 /* ShoppingListViewModel.swift */,
-				DBB1457D268F5C050058BDE4 /* ShoppingListAddItemViewModel.swift */,
-			);
-			path = ViewModel;
-			sourceTree = "<group>";
-		};
-		DB0ACF26268DF10100D735C8 /* Cell */ = {
-			isa = PBXGroup;
-			children = (
-				DB0ACF2D268E029500D735C8 /* ShoppingListItemCell.swift */,
-			);
-			path = Cell;
-			sourceTree = "<group>";
-		};
-		DB0ACF27268DF10E00D735C8 /* ViewController */ = {
-			isa = PBXGroup;
-			children = (
-				DBF76CA7268CBEBE009E5063 /* ShoppingListViewController.swift */,
-				DBB14579268F43DA0058BDE4 /* ShoppingListAddItemViewController.swift */,
-			);
-			path = ViewController;
-			sourceTree = "<group>";
-		};
-		DB0ACF28268DF88000D735C8 /* UIModel */ = {
-			isa = PBXGroup;
-			children = (
-				DB0ACF29268DF89200D735C8 /* ShoppingListItemUIModel.swift */,
-			);
-			path = UIModel;
-			sourceTree = "<group>";
-		};
-		DB0F2997269740AC00B46AEB /* ViewController */ = {
-			isa = PBXGroup;
-			children = (
-				DBFFF72A2694A92B00F6D59B /* NotificationsViewController.swift */,
-				DBF62FCB269600E4002461D3 /* NotificationDisclaimerViewController.swift */,
-			);
-			path = ViewController;
-			sourceTree = "<group>";
-		};
-		DB0F2998269740BB00B46AEB /* Cell */ = {
-			isa = PBXGroup;
-			children = (
-				DB0F299926974DD300B46AEB /* NotificationLabelCellTableViewCell.swift */,
-				DBE27AF22699FAC5004564A8 /* NotificationSoundTableViewCell.swift */,
-				DBE27AF4269A2284004564A8 /* NotificationTimeTableViewCell.swift */,
-			);
-			path = Cell;
-			sourceTree = "<group>";
-		};
-		DBAACAFA269CC7A6009C5925 /* Onboarding */ = {
-			isa = PBXGroup;
-			children = (
-				DBAACAFB269CC7AE009C5925 /* View */,
-			);
-			path = Onboarding;
-			sourceTree = "<group>";
-		};
-		DBAACAFB269CC7AE009C5925 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				DBAACAFC269CC7B8009C5925 /* ViewController */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		DBAACAFC269CC7B8009C5925 /* ViewController */ = {
-			isa = PBXGroup;
-			children = (
-				DBAACAFD269CC7D1009C5925 /* OnboardingViewController.swift */,
-			);
-			path = ViewController;
-			sourceTree = "<group>";
-		};
 		DBF62FC82695F979002461D3 /* Repositories */ = {
 			isa = PBXGroup;
 			children = (
 				DBF62FC92695FA2A002461D3 /* NotificationRepository.swift */,
 			);
 			path = Repositories;
-			sourceTree = "<group>";
-		};
-		DBFFF726269499DE00F6D59B /* Notifications */ = {
-			isa = PBXGroup;
-			children = (
-				DBFFF72926949A0D00F6D59B /* UIModel */,
-				DBFFF72826949A0800F6D59B /* ViewModel */,
-				DBFFF72726949A0300F6D59B /* View */,
-			);
-			path = Notifications;
-			sourceTree = "<group>";
-		};
-		DBFFF72726949A0300F6D59B /* View */ = {
-			isa = PBXGroup;
-			children = (
-				DB0F2998269740BB00B46AEB /* Cell */,
-				DB0F2997269740AC00B46AEB /* ViewController */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		DBFFF72826949A0800F6D59B /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-				DBFFF72C2694A96D00F6D59B /* NotificationsViewModel.swift */,
-			);
-			path = ViewModel;
-			sourceTree = "<group>";
-		};
-		DBFFF72926949A0D00F6D59B /* UIModel */ = {
-			isa = PBXGroup;
-			children = (
-				DBFFF72E2694A99C00F6D59B /* NotificationsUIModel.swift */,
-			);
-			path = UIModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -436,18 +454,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9133BDDA269BEE6F005F8489 /* SF-Pro-Rounded-Medium.otf in Resources */,
-				9133BDDD269BEE6F005F8489 /* SF-Pro-Rounded-Light.otf in Resources */,
 				5F6A60E32689F9EB00F95162 /* LaunchScreen.storyboard in Resources */,
-				9133BDDC269BEE6F005F8489 /* SF-Pro-Rounded-Semibold.otf in Resources */,
 				5F6A60E02689F9EB00F95162 /* Assets.xcassets in Resources */,
-				9133BDD5269BEE6F005F8489 /* SF-Pro-Rounded-Heavy.otf in Resources */,
-				9133BDD8269BEE6F005F8489 /* SF-Pro-Rounded-Black.otf in Resources */,
-				9133BDD7269BEE6F005F8489 /* SF-Pro-Rounded-Thin.otf in Resources */,
-				9133BDD9269BEE6F005F8489 /* SF-Pro-Rounded-Regular.otf in Resources */,
-				9133BDD6269BEE6F005F8489 /* SF-Pro-Rounded-Ultralight.otf in Resources */,
 				5F6A60DE2689F9EA00F95162 /* Main.storyboard in Resources */,
-				9133BDDB269BEE6F005F8489 /* SF-Pro-Rounded-Bold.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -500,37 +509,43 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DBF62FCC269600E4002461D3 /* NotificationDisclaimerViewController.swift in Sources */,
-				DBB1457E268F5C050058BDE4 /* ShoppingListAddItemViewModel.swift in Sources */,
+				5FFEE5E1269D0D4500A1192F /* PlanningDateModelViewModel.swift in Sources */,
 				DBF62FCA2695FA2A002461D3 /* NotificationRepository.swift in Sources */,
-				913D1CBD269A103800A51245 /* PlanningViewController.swift in Sources */,
+				5FFEE5E5269D0D4500A1192F /* DateModel.swift in Sources */,
+				5FFEE5E4269D0D4500A1192F /* PlanningCellViewController.swift in Sources */,
 				5F6A60DB2689F9EA00F95162 /* ViewController.swift in Sources */,
-				9133BDEE269BFFDA005F8489 /* PlanCollectionViewCell.swift in Sources */,
 				5F90ABB3268DF8CF00276FD6 /* DesignableUITextField.swift in Sources */,
 				5F92C8E42693F6E80095F92C /* RecipeViewController.swift in Sources */,
-				913D1CFB269A4B3F00A51245 /* DateModel.swift in Sources */,
+				5FFEE5F6269D0D4500A1192F /* NotificationLabelCellTableViewCell.swift in Sources */,
+				5FFEE5E6269D0D4500A1192F /* File.swift in Sources */,
+				5FFEE5E2269D0D4500A1192F /* PlanCollectionViewCell.swift in Sources */,
+				5FFEE5EF269D0D4500A1192F /* RadioButton.swift in Sources */,
+				5FFEE5F8269D0D4500A1192F /* NotificationDisclaimerViewController.swift in Sources */,
+				5FFEE5E8269D0D4500A1192F /* PlanningCollectionView.swift in Sources */,
+				5FFEE5EE269D0D4500A1192F /* PaddingLabel.swift in Sources */,
+				5FFEE5E9269D0D4500A1192F /* PlanningScreenViewController.swift in Sources */,
 				5F92C8E226933E920095F92C /* MyCollectionViewCell.swift in Sources */,
 				5F6A60D72689F9EA00F95162 /* AppDelegate.swift in Sources */,
-				DBE27AF32699FAC5004564A8 /* NotificationSoundTableViewCell.swift in Sources */,
-				9133BDEB269BF603005F8489 /* DiaUiModel.swift in Sources */,
-				DBFFF72F2694A99C00F6D59B /* NotificationsUIModel.swift in Sources */,
+				5FFEE5F1269D0D4500A1192F /* ShoppingListViewController.swift in Sources */,
 				5F6A60D92689F9EA00F95162 /* SceneDelegate.swift in Sources */,
-				DBE27AF5269A2284004564A8 /* NotificationTimeTableViewCell.swift in Sources */,
 				DBAACAF6269C99DC009C5925 /* TabBarController.swift in Sources */,
-				DBAACAFE269CC7D1009C5925 /* OnboardingViewController.swift in Sources */,
+				5FFEE5F4269D0D4500A1192F /* NotificationSoundTableViewCell.swift in Sources */,
+				5FFEE5FB269D0D4500A1192F /* NotificationsUIModel.swift in Sources */,
+				5FFEE5ED269D0D4500A1192F /* ShoppingListItemCell.swift in Sources */,
+				5FFEE5F3269D0D4500A1192F /* NotificationsViewModel.swift in Sources */,
+				5FFEE5FC269D0D4500A1192F /* OnboardingViewController.swift in Sources */,
 				DBAACAF9269CC320009C5925 /* UserPreferences.swift in Sources */,
-				DBB1457B268F43DA0058BDE4 /* ShoppingListAddItemViewController.swift in Sources */,
-				913D1D03269A7FE800A51245 /* PlanningDateModelViewModel.swift in Sources */,
-				DB0ACF2A268DF89200D735C8 /* ShoppingListItemUIModel.swift in Sources */,
-				DB0ACF21268DEEA300D735C8 /* ShoppingListViewModel.swift in Sources */,
-				DB0ACF2E268E029500D735C8 /* ShoppingListItemCell.swift in Sources */,
-				DBF76CA8268CBEBE009E5063 /* ShoppingListViewController.swift in Sources */,
-				DB0ACF2C268E006700D735C8 /* RadioButton.swift in Sources */,
-				DBFFF72526933E7100F6D59B /* PaddingLabel.swift in Sources */,
-				DB0F299A26974DD300B46AEB /* NotificationLabelCellTableViewCell.swift in Sources */,
-				DBFFF72D2694A96D00F6D59B /* NotificationsViewModel.swift in Sources */,
+				5FFEE5E3269D0D4500A1192F /* PlanningCellModel.swift in Sources */,
+				5FFEE5F9269D0D4500A1192F /* NotificationsViewController.swift in Sources */,
+				5FFEE5EB269D0D4500A1192F /* ShoppingListAddItemViewModel.swift in Sources */,
 				5F92C8E0269331010095F92C /* RecipeListViewController.swift in Sources */,
-				DBFFF72B2694A92B00F6D59B /* NotificationsViewController.swift in Sources */,
+				5FFEE5F5269D0D4500A1192F /* NotificationTimeTableViewCell.swift in Sources */,
+				5FFEE5F2269D0D4500A1192F /* ShoppingListItemUIModel.swift in Sources */,
+				5FFEE5EA269D0D4500A1192F /* PlanningViewController.swift in Sources */,
+				5FFEE5E0269D0D4500A1192F /* PlanningDateViewModel.swift in Sources */,
+				5FFEE5F0269D0D4500A1192F /* ShoppingListAddItemViewController.swift in Sources */,
+				5FFEE5EC269D0D4500A1192F /* ShoppingListViewModel.swift in Sources */,
+				5FFEE5E7269D0D4500A1192F /* DiaUiModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

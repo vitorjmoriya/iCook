@@ -46,8 +46,9 @@ class PlanningScreenViewController: UIViewController {
     */
     
     init() {
-        super.init(frame: CGRect.init(origin: 0, size: 0)
-        PlanningScreenViewController.initialize()
+        self.planningText = UILabel()
+        super.init(nibName: nil, bundle: nil)
+        //PlanningScreenViewController.initialize()
     }
     
     required init?(coder: NSCoder) {

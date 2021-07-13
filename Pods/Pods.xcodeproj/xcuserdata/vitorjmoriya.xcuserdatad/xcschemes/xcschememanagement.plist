@@ -4,23 +4,15 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>iCook 1.xcscheme_^#shared#^_</key>
+		<key>CollectionPickerView.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>1</integer>
+			<integer>3</integer>
 		</dict>
-		<key>iCook.xcscheme_^#shared#^_</key>
+		<key>Pods-iCook.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>0</integer>
-		</dict>
-	</dict>
-	<key>SuppressBuildableAutocreation</key>
-	<dict>
-		<key>5F6A60D22689F9EA00F95162</key>
-		<dict>
-			<key>primary</key>
-			<true/>
+			<integer>2</integer>
 		</dict>
 	</dict>
 </dict>
