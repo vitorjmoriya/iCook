@@ -629,10 +629,6 @@ Notificações</string>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s76-5u-rvG">
-                                                <rect key="frame" x="16" y="124" width="358" height="37"/>
-                                                <color key="backgroundColor" systemColor="systemGray2Color"/>
-                                            </view>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Para Você" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" id="ejH-gJ-3Oo">
                                                 <rect key="frame" x="16" y="179" width="106" height="23"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -662,9 +658,10 @@ Notificações</string>
                                                             <rect key="frame" x="0.0" y="0.0" width="160" height="170"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                             <subviews>
-                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="iEs-9C-Rnw">
+                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="iEs-9C-Rnw">
                                                                     <rect key="frame" x="0.0" y="0.0" width="160" height="102"/>
                                                                     <constraints>
+                                                                        <constraint firstAttribute="width" constant="160" id="43M-gr-w33"/>
                                                                         <constraint firstAttribute="height" constant="102" id="Wvm-sr-FNP"/>
                                                                     </constraints>
                                                                 </imageView>
@@ -742,10 +739,11 @@ Notificações</string>
                                                             <rect key="frame" x="0.0" y="0.0" width="160" height="170"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                             <subviews>
-                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uxC-OW-FlH">
+                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uxC-OW-FlH">
                                                                     <rect key="frame" x="0.0" y="0.0" width="160" height="102"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="height" constant="102" id="6Fn-Ko-EYb"/>
+                                                                        <constraint firstAttribute="width" constant="160" id="iUW-gY-nra"/>
                                                                     </constraints>
                                                                 </imageView>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4 porções • 15 min • Trabalhoso" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="urt-VF-gEb">
@@ -1198,12 +1196,11 @@ Notificações</string>
                                             <constraint firstItem="NCO-9x-lrH" firstAttribute="leading" secondItem="jaA-Dh-0kl" secondAttribute="leading" constant="16" id="7sP-QZ-aBu"/>
                                             <constraint firstItem="aiW-4J-4l3" firstAttribute="leading" secondItem="jaA-Dh-0kl" secondAttribute="leading" constant="16" id="8KK-pt-os6"/>
                                             <constraint firstAttribute="trailing" secondItem="RWj-nu-YUx" secondAttribute="trailing" constant="16" id="9hR-hw-o76"/>
-                                            <constraint firstItem="ejH-gJ-3Oo" firstAttribute="top" secondItem="s76-5u-rvG" secondAttribute="bottom" constant="18" id="CBr-ix-ioX"/>
+                                            <constraint firstItem="ejH-gJ-3Oo" firstAttribute="top" secondItem="K20-Eg-MUt" secondAttribute="bottom" constant="65" id="BIg-e0-JHg"/>
                                             <constraint firstItem="6zx-ah-bzs" firstAttribute="leading" secondItem="jaA-Dh-0kl" secondAttribute="leading" constant="16" id="JM9-gf-eMf"/>
                                             <constraint firstItem="Al5-bM-C5u" firstAttribute="top" secondItem="EGu-nU-7dm" secondAttribute="bottom" constant="9" id="KXm-Zh-V2I"/>
                                             <constraint firstItem="Cug-yW-Ejb" firstAttribute="leading" secondItem="jaA-Dh-0kl" secondAttribute="leading" constant="16" id="MPu-cx-Da6"/>
                                             <constraint firstItem="csm-w1-L4Z" firstAttribute="top" secondItem="aiW-4J-4l3" secondAttribute="bottom" constant="32" id="MSp-Q7-aPc"/>
-                                            <constraint firstAttribute="trailing" secondItem="s76-5u-rvG" secondAttribute="trailing" constant="16" id="MoB-yq-Cfp"/>
                                             <constraint firstItem="1Z7-Yr-DzT" firstAttribute="top" secondItem="6zx-ah-bzs" secondAttribute="bottom" constant="32" id="NcW-eL-fgS"/>
                                             <constraint firstItem="NCO-9x-lrH" firstAttribute="top" secondItem="jaA-Dh-0kl" secondAttribute="top" constant="44" id="OaD-mE-Cpz"/>
                                             <constraint firstItem="uzh-52-cGr" firstAttribute="trailing" secondItem="aiW-4J-4l3" secondAttribute="trailing" id="Oob-Xt-Kpz"/>
@@ -1216,14 +1213,12 @@ Notificações</string>
                                             <constraint firstItem="oH9-2p-qDQ" firstAttribute="leading" secondItem="jaA-Dh-0kl" secondAttribute="leading" constant="16" id="UDm-fL-JNx"/>
                                             <constraint firstItem="nOb-3Q-Fmw" firstAttribute="leading" secondItem="jaA-Dh-0kl" secondAttribute="leading" constant="16" id="Vk2-2u-Idp"/>
                                             <constraint firstAttribute="trailing" secondItem="Y2I-vw-MlQ" secondAttribute="trailing" id="WQW-i5-Mgs"/>
-                                            <constraint firstItem="s76-5u-rvG" firstAttribute="top" secondItem="K20-Eg-MUt" secondAttribute="bottom" constant="10" id="WS6-u3-mFE"/>
                                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="csm-w1-L4Z" secondAttribute="trailing" constant="20" symbolic="YES" id="aOB-p7-zQL"/>
                                             <constraint firstAttribute="trailing" secondItem="EGu-nU-7dm" secondAttribute="trailing" constant="16" id="afS-4G-Pkw"/>
                                             <constraint firstItem="oH9-2p-qDQ" firstAttribute="top" secondItem="Ysf-yu-eqp" secondAttribute="bottom" constant="8" id="bFC-ab-5q0"/>
                                             <constraint firstItem="csm-w1-L4Z" firstAttribute="leading" secondItem="jaA-Dh-0kl" secondAttribute="leading" constant="16" id="byh-7e-d8d"/>
                                             <constraint firstItem="oH9-2p-qDQ" firstAttribute="top" secondItem="RWj-nu-YUx" secondAttribute="bottom" constant="9" id="d0D-NG-R7F"/>
                                             <constraint firstItem="K20-Eg-MUt" firstAttribute="leading" secondItem="jaA-Dh-0kl" secondAttribute="leading" constant="16" id="ddY-9k-GtT"/>
-                                            <constraint firstItem="s76-5u-rvG" firstAttribute="leading" secondItem="jaA-Dh-0kl" secondAttribute="leading" constant="16" id="dk9-bY-jet"/>
                                             <constraint firstItem="6zx-ah-bzs" firstAttribute="top" secondItem="s4A-Jk-CfH" secondAttribute="bottom" constant="9" id="fqd-GI-rw6"/>
                                             <constraint firstItem="EGu-nU-7dm" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="1Z7-Yr-DzT" secondAttribute="trailing" constant="8" symbolic="YES" id="gc8-GQ-UIr"/>
                                             <constraint firstItem="Y2I-vw-MlQ" firstAttribute="top" secondItem="Cug-yW-Ejb" secondAttribute="bottom" constant="8" id="kTP-fP-hhg"/>
@@ -1670,6 +1665,7 @@ Notificações</string>
                     <connections>
                         <outlet property="ingredientsTableView" destination="GVO-ub-wYs" id="gz8-AN-dCt"/>
                         <outlet property="instructionsTableView" destination="b3I-wm-mzN" id="fOP-Jo-QJr"/>
+                        <outlet property="recipeDescription" destination="2aP-YB-md0" id="YoB-VY-k0Q"/>
                         <outlet property="recipeImage" destination="fhe-x0-f2Z" id="abG-2n-PMu"/>
                         <outlet property="recipeName" destination="LJo-r4-7Ic" id="0Ak-c1-g0c"/>
                         <outlet property="tagCollectionView" destination="J61-UF-qLf" id="EBn-jI-00I"/>
@@ -1710,7 +1706,7 @@ Notificações</string>
                     <tabBarItem key="tabBarItem" title="Lista de Compras" image="cart.fill" catalog="system" id="gzS-Jb-BPc"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="lEI-u6-arx">
-                        <rect key="frame" x="0.0" y="44" width="390" height="96"/>
+                        <rect key="frame" x="0.0" y="44" width="390" height="103.66666666666666"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
                         <color key="barTintColor" systemColor="secondarySystemBackgroundColor"/>

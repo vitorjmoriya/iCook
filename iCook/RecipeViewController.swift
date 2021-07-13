@@ -9,15 +9,13 @@ import Foundation
 import UIKit
 class RecipeViewController: UIViewController {
     
+    @IBOutlet weak var recipeDescription: UILabel!
     @IBOutlet weak var tagCollectionView: UICollectionView!
     @IBOutlet weak var ingredientsTableView: ContentSizedTableView!
     @IBOutlet weak var instructionsTableView: ContentSizedTableView!
     @IBOutlet weak var recipeImage: UIImageView!
     @IBOutlet weak var recipeName: UILabel!
-    var recipe = Recipe(name: "teste", description: "nADA", image: UIImage(named: "ovo")!)
-    var ingredientsList = ["2 bananas maduras;", "2 ovos;", "2 colheres de sopa de aveia em flocos.", "Farinha", "Comida"]
-    var instructionsList = ["Bata todos os ingredientes no liquidificador.", "Aqueça a frigideira, coloque 1 fio de óleo de coco e acrescente 1 concha de massa.", "Deixe dourar com cuidado. "]
-    var tags = ["Vegetariano","Sem Glútem", "Sem Lactose"]
+    var recipe = Recipe(name: "Ovo", description: "Ovo mexido", image: UIImage(named: "ovo")!, instructions: ["Quebre o ovo", "Coloque na frigideira"], ingredientList: ["1 Ovo"], tags: ["Sem Glútem", "Sem Lactose"])
     override func viewDidLoad() {
         
         
@@ -42,6 +40,7 @@ class RecipeViewController: UIViewController {
         
         recipeName.text = recipe.name
         recipeImage.image = recipe.image
+        recipeDescription.text = recipe.description
         super.viewDidLoad()
     }
 }
@@ -50,13 +49,13 @@ class RecipeViewController: UIViewController {
 extension RecipeViewController: UICollectionViewDelegate, UICollectionViewDataSource {
 
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return self.tags.count
+        return recipe.tags.count
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "tag", for: indexPath as IndexPath) as! RecipeTagViewCell
-        cell.tagText.text = tags[indexPath.row]
-        switch tags[indexPath.row] {
+        cell.tagText.text = recipe.tags[indexPath.row]
+        switch recipe.tags[indexPath.row] {
         case "Sem Lactose":
             cell.contentView.backgroundColor = UIColor.systemBlue.withAlphaComponent(0.12)
             cell.tagText.textColor = UIColor.systemBlue
@@ -64,6 +63,9 @@ extension RecipeViewController: UICollectionViewDelegate, UICollectionViewDataSo
             cell.contentView.backgroundColor = UIColor.systemYellow.withAlphaComponent(0.12)
             cell.tagText.textColor = UIColor.systemOrange
         case "Vegetariano":
+            cell.contentView.backgroundColor = UIColor.systemOrange.withAlphaComponent(0.12)
+            cell.tagText.textColor = UIColor.systemOrange
+        case "Vegano":
             cell.contentView.backgroundColor = UIColor.systemGreen.withAlphaComponent(0.12)
             cell.tagText.textColor = UIColor.systemGreen
         default:
@@ -85,9 +87,9 @@ extension RecipeViewController: UICollectionViewDelegate, UICollectionViewDataSo
 extension RecipeViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if tableView == self.ingredientsTableView{
-            return ingredientsList.count
+            return recipe.ingredientList.count
         }else if tableView == self.instructionsTableView {
-            return instructionsList.count
+            return recipe.instructions.count
             
         }
         return 0
@@ -96,11 +98,11 @@ extension RecipeViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if tableView == self.ingredientsTableView{
             let cell = tableView.dequeueReusableCell(withIdentifier: "ingredientCell", for: indexPath) as! ingredientsTableViewCell
-            cell.ingredient.text = ingredientsList[indexPath.row]
+            cell.ingredient.text = recipe.ingredientList[indexPath.row]
             return cell
         }else if tableView == self.instructionsTableView {
             let cell = tableView.dequeueReusableCell(withIdentifier: "instructionCell", for: indexPath) as! instructionsTableViewCell
-            let myMutableString = NSMutableAttributedString(string: String(indexPath.row + 1) + ". "+instructionsList[indexPath.row])
+            let myMutableString = NSMutableAttributedString(string: String(indexPath.row + 1) + ". " + recipe.instructions[indexPath.row])
             myMutableString.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.systemGray, range: NSRange(location:0,length:2))
             cell.instruction.attributedText = myMutableString
             return cell

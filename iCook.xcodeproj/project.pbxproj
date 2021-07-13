@@ -17,6 +17,7 @@
 		5F92C8E0269331010095F92C /* RecipeListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F92C8DF269331010095F92C /* RecipeListViewController.swift */; };
 		5F92C8E226933E920095F92C /* MyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F92C8E126933E910095F92C /* MyCollectionViewCell.swift */; };
 		5F92C8E42693F6E80095F92C /* RecipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F92C8E32693F6E80095F92C /* RecipeViewController.swift */; };
+		5F9A1566269D227C00517C38 /* FilterChipCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9A1565269D227C00517C38 /* FilterChipCollectionViewCell.swift */; };
 		5FFEE5E0269D0D4500A1192F /* PlanningDateViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFEE5B2269D0D4500A1192F /* PlanningDateViewModel.swift */; };
 		5FFEE5E1269D0D4500A1192F /* PlanningDateModelViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFEE5B3269D0D4500A1192F /* PlanningDateModelViewModel.swift */; };
 		5FFEE5E2269D0D4500A1192F /* PlanCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFEE5B5269D0D4500A1192F /* PlanCollectionViewCell.swift */; };
@@ -63,6 +64,7 @@
 		5F92C8DF269331010095F92C /* RecipeListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeListViewController.swift; sourceTree = "<group>"; };
 		5F92C8E126933E910095F92C /* MyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCollectionViewCell.swift; sourceTree = "<group>"; };
 		5F92C8E32693F6E80095F92C /* RecipeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeViewController.swift; sourceTree = "<group>"; };
+		5F9A1565269D227C00517C38 /* FilterChipCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterChipCollectionViewCell.swift; sourceTree = "<group>"; };
 		5FFEE5A2269D0CE700A1192F /* SF-Pro-Rounded-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Rounded-Semibold.otf"; sourceTree = "<group>"; };
 		5FFEE5A3269D0CE800A1192F /* SF-Pro-Rounded-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Rounded-Medium.otf"; sourceTree = "<group>"; };
 		5FFEE5A4269D0CE800A1192F /* SF-Pro-Rounded-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Rounded-Regular.otf"; sourceTree = "<group>"; };
@@ -166,6 +168,7 @@
 				5F92C8E32693F6E80095F92C /* RecipeViewController.swift */,
 				DBAACAF8269CC320009C5925 /* UserPreferences.swift */,
 				DBAACAF5269C99DC009C5925 /* TabBarController.swift */,
+				5F9A1565269D227C00517C38 /* FilterChipCollectionViewCell.swift */,
 			);
 			path = iCook;
 			sourceTree = "<group>";
@@ -519,6 +522,7 @@
 				5FFEE5F6269D0D4500A1192F /* NotificationLabelCellTableViewCell.swift in Sources */,
 				5FFEE5E6269D0D4500A1192F /* File.swift in Sources */,
 				5FFEE5E2269D0D4500A1192F /* PlanCollectionViewCell.swift in Sources */,
+				5F9A1566269D227C00517C38 /* FilterChipCollectionViewCell.swift in Sources */,
 				5FFEE5EF269D0D4500A1192F /* RadioButton.swift in Sources */,
 				5FFEE5F8269D0D4500A1192F /* NotificationDisclaimerViewController.swift in Sources */,
 				5FFEE5E8269D0D4500A1192F /* PlanningCollectionView.swift in Sources */,
